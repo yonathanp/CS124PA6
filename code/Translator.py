@@ -2,27 +2,41 @@ import json
 import string
 import random
 
+class Dictionary:
+    def __init__(self, dictionary_filename):
+        with open(dictionary_filename) as f:
+            self.italian_to_english = json.load(f)
+
+    def translate_word(self, sentence, word_index):
+        word = sentence[word_index]
+        
+        # Unknown words will remain in Italian
+        if word not in self.italian_to_english:
+            return word
+
+        # If the word is in our dictionary but not defined, remain in Italian
+        # TODO: remove when the dictionary is completely filled out
+        if not self.italian_to_english[word]:
+            return word
+
+        # The naive translator simply returns a random definition for a given word
+        return random.choice(self.italian_to_english[word])
+        
+        
+
 class Translator:
     def __init__(self, dictionaryFname):
-        with open(dictionaryFname) as fp:
-            self.dictionary = json.load(fp)
+        self.dictionary = Dictionary(dictionaryFname)
     
     def directTranslate(self, sentence):
         random.seed(0)
         translation = []
         tokens = string.split(sentence)
-        words = []
-        for token in tokens:
-            words.append(token.lower())
-        for word in words:
-            if (word in self.dictionary) and (self.dictionary[word]):
-                translation.append(random.choice(self.dictionary[word]))
-            else:
-                translation.append(word)
-        result = translation[0]
-        for i in range(1,len(translation)):
-            result = result + ' ' + translation[i]
-        return result
+        words = [token.lower() for token in tokens]
+
+        for i in range(len(words)):
+            translation.append(self.dictionary.translate_word(words, i))
+        return ' '.join(translation)
 
 
 def main():
@@ -37,10 +51,7 @@ def main():
         t = translator.directTranslate(s)
         print '\n'
         print t.encode('utf-8')
-    
-            
+
+
 if __name__ == '__main__':
     main()
-                
-    
-    
