@@ -2,6 +2,18 @@ import json
 import string
 import random
 
+class PreProcessor:
+    def __init__(self):
+        pass
+    def process(self, sentence):
+        return [x.lower() for x in sentence]
+
+class PostProcessor:
+    def __init__(self):
+        pass
+    def process(self, sentence):
+        return sentence
+
 class Dictionary:
     def __init__(self, dictionary_filename):
         with open(dictionary_filename) as f:
@@ -27,15 +39,23 @@ class Dictionary:
 class Translator:
     def __init__(self, dictionaryFname):
         self.dictionary = Dictionary(dictionaryFname)
+        self.preprocessor = PreProcessor()
+        self.postprocessor = PostProcessor()
     
     def directTranslate(self, sentence):
         random.seed(0)
         translation = []
         tokens = string.split(sentence)
-        words = [token.lower() for token in tokens]
+        # Preprocess
+        words = self.preprocessor.process(tokens)
 
+        # Translate
         for i in range(len(words)):
             translation.append(self.dictionary.translate_word(words, i))
+
+        # Postprocess
+        translation = self.postprocessor.process(translation)
+
         return ' '.join(translation)
 
 
