@@ -17,14 +17,14 @@
 "riferite" = ["recount", "report", "relate", "credit", "attribute"]
 "ultima" = ["last", "final", "latest", "recent", "farthest"]
 "corso" = ["course", "flow", "circulation", "run"]
-"pubblico" = ["public", "state", "audience", "people", "community" ]
+"pubblico" = ["public", "state", "audience", "people", "community"]
 "abbiate" = ["own", "possess", "contain", "have", "obtain"]
 "trascorso" = ["enjoy","spend", "pass", "go by", "skim through"]
 "abbia" = ["own", "possess", "contain", "have", "obtain"]
 "colleghi" = ["colleague", "coworker", "co-worker" "connect", "relate"]
-"17" = {"17"}
+"17" = ["17"]
 "richiesta" = ["request", "application", "demand", "ask", "require"] 
-"18" = {"18"}
+"18" = ["18"]
 interrogazioni = ["interrogation", "oral exam", "oral test", "point of order"]
 "un" = ["one", "a", "an"]
 "ancora" = ["again", "still", "even now", "even"]
