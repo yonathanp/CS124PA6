@@ -1,16 +1,17 @@
 certa
     certain
+    convinced
     certainly
-    certainty
-vacanza // original was vacanze
+    some
+vacanze
     vacation
     holiday
     time off
-    light-hearted person
+    light-hearted period
 messo
-    well dressed
+    well-dressed
     put
-    placed
+    place
     well-built
     messenger
 tribunale
@@ -18,18 +19,20 @@ tribunale
     court
     tribunal
 fine
-    acute
     refined
-    exquisite
     goal
     subtle
+	objective
+	end
 numerosi
     numerous
     several
-tempesta // original was tempeste
+tempeste
     storm
     tempest
     squall
+	beat
+	pound
 presente
     present
     participating
@@ -46,7 +49,9 @@ frattempo
     meantime
     interim
 ricevuto
-    received
+    receive
+	suffer
+	obtain
 riconciliazione
     reconciliation
 pregiudiziale
@@ -59,17 +64,19 @@ di
     on
     at
 de
-    of
+    de
 avete
-    own
-    obtain
-    keep
-    feel
-    wear
+	own
+	possess
+	contain
+	have
+	obtain
 da
     from
     to
     at
+	since
+	give
 accusa
     accusation
     charge
@@ -79,7 +86,7 @@ minuto
     minor
     fine
     delicate
-    slight
+	minute
 televisione
     television
 relazione
@@ -88,13 +95,13 @@ relazione
     affair
     report
     relation
-tenere // original was tenesse
+tenesse
     hold
     maintain
     withhold
     keep
     occupy
-desiderare // original was desidera 
+desidera 
     want
     desire
     wish
@@ -107,7 +114,7 @@ esprimere
     convey
 rilevare
     remove
-    take off
+    observe
     measure
     notice
     take over
@@ -117,7 +124,11 @@ situazione
     status
     position
     context
-ricorrerà // ???
+ricorrerà
+	resort
+	draw upon
+	petition
+	appeal
 ordine
     order
     layout
@@ -125,13 +136,12 @@ ordine
     rank
     directive
 vicepresidente
-    vice president
+    vice-president
 discussione
     discussion  
     debate
     argument
     quarrel
-    closing argument
 ripresa
     retake
     upswing
@@ -141,25 +151,27 @@ ripresa
 nuovamente
     again
     one more time
-    from the top
 appena
     barely
     scarcely
     only
     just
     as soon as
-relativo // original was relativi
+relativi
     related
     connected
     concerning
     relative
-    relevant
+    pertaining
 miei
     my
+	mine
 sue
     her
     his
-opinione // original was opinioni
+	her own
+	his own
+opinioni
     opinion
     viewpoint
     esteem
@@ -174,23 +186,30 @@ sua
     her
     its
     his
-nei //40
+nei
     in the
-    moles
-    flaws
+	at the
+	to the
+	into the	
+    mole
 suo
     his
     her
-esaminare   // original was esaminerò
+	his own
+	her own
+esaminerò
     examine
     analyze
     test  
 sui
     on the
+	above the
+	over the
+	at the
+	about the
 precedente
     previous
     preceding
-    prior event
     premise
     precedent
 errore
@@ -199,31 +218,45 @@ errore
     oversight
     misunderstanding
     fault
-stata   // ???
-avere   // original were avrà, avrò, avevamo, abbiamo
+stata
+	be
+	exist
+avrà
+	have
+	possess
+	contain
+	own
+avrò
+	have
+	possess
+	contain
+	own
+avevamo
+	have
+	possess
+	contain
+	own
+abbiamo
     own
     obtain
     keep
     feel
     wear
 stato
-    stayed
-    state
-    government
-    condition
-    position
+	be
+	exist
+	state
+	condition
+	government
 letto
     read
     bed
-    riverbed
-    bedding
-dichiarazione   // original was dichiarazioni //50
+dichiarazioni
     release
-    bulletin
     statement
     declaration
-    tax return
-riguardare  // original was riguardavano
+    affidavit
+riguardavano
     look at again
     review
     inspect
@@ -231,11 +264,13 @@ riguardare  // original was riguardavano
     concern
 dalla
     from the
+    to the
+    at the
+	since the
 già
     by now
     already
     before
-    as it is
     indeed
 novembre
     November
@@ -247,29 +282,29 @@ anche
     too
     although
     even
-    further
 punto
     point
     dot
     moment
     fix
     stitch
-competente  // original was competenti
+competenti
     expert
     in charge
     specialist
+	compete
+	be the responsibility of
 seguito
-    following
+    follow
+	continue
+	proceed
     fans
     continuation
-    appeal
-    string
 come
     how
     same as
     as
     as though
-    as much as
 ambiente
     ambient
     environment
@@ -278,25 +313,24 @@ ambiente
     space
 plenaria
     plenary
-questo  // original was questa
+questa
     this
-    these
     such
     this one
-    he
-esporre // original was esposta
+esposta
     exhibit
     display
-    express
+	show
+	explain
     present
-    expose
-nikitin // ???
-disposizione   // original was disposizioni
+nikitin
+	Nikitin
+disposizioni
     arrangement
     disposition
     disposal
     instruction
-    regulation    
+    order    
 una
     one
     a
@@ -304,45 +338,49 @@ una
 resto
     remainder
     change
-    remains
-    ruins
-    relics
-atti    //70
-    proceedings
-    records
-atto    // original was atti
-    apt
-    gesture
-    act
+	rest
+	remain
+atti
+    proceeding
+    record
+	act
+	suitable
 risultati
-    results
+    result
+	outcome
+	solution
 parlamento
     parliament
-questore    // original was questori
+questori
     commissioner
 giudiziario
     judiciary
     judicial
+	court
 nel
     in the
-    in
-violento    // original was violente
+    to the
+	at the
+	into the
+violente
     aggressive
     violent
     extreme
     brute
     savage
 paesi
-    countries
+    country
+	land
+	nation
 presidente
     president
-appello //80
+appello
     roll call
-    head count
+	attendance
     plea
     address
     appeal
-ribadire    // original was ribadendo
+ribadendo
     reiterate
     restate
     reaffirm
@@ -350,16 +388,19 @@ ribadire    // original was ribadendo
     hammer down
 che
     that
-    because
-    when
-    on condition that
-    though
-tutto   // originals were tutti, tutte
+tutti
     everybody
     everyone
     everything
     all
-verificare  // original was verificati
+	entirely
+tutte
+    everybody
+    everyone
+    everything
+    all
+	entirely
+verificati
     confirm 
     verify
     prove
@@ -371,44 +412,47 @@ spagnolo
     Spanish
 commissario
     commissioner
-criminale   // original was criminali
+criminali
     criminal
     crime
     illegal
     delinquent
-però    //90
+però
     but
     yet
     however
-    well
+    though
 apertura
     break
     gap
     opening
     inauguration
     openness
-sapere  //original was sappiamo
+sappiamo
     be able
     think
     know
-    understand
     taste
 cioè
     that is
     namely
-    meaning what?
     actually
     rather
 siamo
-    we're
+    be
+	exist
 sessione
     session
     shift
     meeting
 dicembre
     December
-abbiamo // also see "avere"
-    we have
+abbiamo
+	own
+	possess
+	contain
+	have
+	obtain
 venerdì
     Friday
 caso
@@ -418,5 +462,5 @@ caso
     event
     case
 mi
-    me
     to me
+	I
