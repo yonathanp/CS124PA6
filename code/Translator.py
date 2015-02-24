@@ -27,7 +27,7 @@ class Dictionary:
         with open(dictionary_filename) as f:
             self.italian_to_english = json.load(f)
 
-    def translate_word(self, sentence, word_index):
+    def translate_word_random(self, sentence, word_index):
         word = sentence[word_index]
         
         # Unknown words will remain in Italian
@@ -43,6 +43,27 @@ class Dictionary:
 
         # The naive translator simply returns a random definition for a given word
         return random.choice(self.italian_to_english[word])
+        
+    def translate_word_unigram(self, sentence, word_index, unigramFrequencies):
+        word = sentence[word_index]
+        if word not in self.italian_to_english:
+            return word
+        if not self.italian_to_english[word]:
+            return word
+        maxFreq = 0.0
+        bestTranslation = word
+        for w in self.italian_to_english[word]:
+            if unigramFrequencies[w] > maxFreq:
+                maxFreq = unigramFrequencies[w]
+                bestTranslation = word
+        return bestTranslation
+        
+    def getAllEnglishWords(self):
+        res = set()
+        for i in self.italian_to_english:
+            for e in self.italian_to_english[i]:
+                res.add(e)
+        return res
         
         
 
@@ -69,13 +90,42 @@ class Translator:
 
         # Translate
         translation = []
-        for i in range(len(words)):
-            translation.append(self.dictionary.translate_word(words, i))
+        if config['use_unigram']:
+            unigramFrequencies = buildNgramModel(1,config[english_full_proceedings_file],50)
+            for i in range(len(words)):
+                translation.append(self.dictionary.translate_word_unigram(words, i, unigramFrequencies))
+        else:
+            for i in range(len(words)):
+                translation.append(self.dictionary.translate_word_random(words, i))
 
         # Postprocess
         translation = self.postprocessor.process(translation)
 
         return ' '.join(translation)
+        
+    def buildNGramModel(self, N, fname, skipLines):
+        relevantWords = self.dictionary.getAllEnglishWords()
+        Frequencies = {}
+        with open(devSetFile) as f:
+            lines = f.readlines()
+        for i in range(skipLines, len(lines)):
+            line = lines[i]
+            tokens = string.split(line)
+            lcase = [token.lower() for token in tokens]
+            words = [re.sub('[\W]+','',w) for w in lcase]
+            for i in range(len(words) - N + 1):
+                L = words[i:i+N]
+                relevant = True
+                for w in L:
+                    if RelevantWords and (w not in RelevantWords):
+                        relevant = False
+                if relevant:
+                    key = ' '.join(L)
+                    if key in Frequencies:
+                        Frequencies[key] += 1
+                    else:
+                        Frequencies[key] = 1
+        return Frequencies
 
 
 def main():
