@@ -1,4 +1,5 @@
 import json
+import os
 import re
 import string
 import sys
@@ -7,19 +8,22 @@ from termcolor import colored, cprint
 
 
 class PreProcessor:
-    def __init__(self):
+    def __init__(self, config):
+        self.config = config
         pass
     def process(self, sentence):
         return [x.lower() for x in sentence]
 
 class PostProcessor:
-    def __init__(self):
+    def __init__(self, config):
+        self.config = config
         pass
     def process(self, sentence):
         return sentence
 
 class Dictionary:
-    def __init__(self, dictionary_filename):
+    def __init__(self, dictionary_filename, config):
+        self.config = config
         with open(dictionary_filename) as f:
             self.italian_to_english = json.load(f)
 
@@ -43,10 +47,11 @@ class Dictionary:
         
 
 class Translator:
-    def __init__(self, dictionaryFname):
-        self.dictionary = Dictionary(dictionaryFname)
-        self.preprocessor = PreProcessor()
-        self.postprocessor = PostProcessor()
+    def __init__(self, dictionaryFname, config):
+        self.dictionary = Dictionary(dictionaryFname, config)
+        self.preprocessor = PreProcessor(config)
+        self.postprocessor = PostProcessor(config)
+        self.config = config
     
     def directTranslate(self, sentence):
         # Seed RNG to 0 for debugging purposes
@@ -74,17 +79,31 @@ class Translator:
 
 
 def main():
-    dictionaryFile = '../dic/dictionary.json'
-    devSetFile = '../corpus/ita_dev.txt'
-    sentences = []
-    with open(devSetFile) as f:
-        sentences = f.readlines()
-    translator = Translator(dictionaryFile)
-    for s in sentences:
+    # Ensure our working directory is correct
+    os.chdir(sys.path[0])
+    CONFIG_FILE = 'config.json'
+    with open(CONFIG_FILE) as f:
+      config = json.load(f)
+    with open(config['dev_sentence_file']) as f:
+        dev_sentences = f.readlines()
+    with open(config['dev_gold_file']) as f:
+        gold_sentences = f.readlines()
+    translator = Translator(config['dictionary_file'], config)
+    for (s, gold) in zip(dev_sentences, gold_sentences):
         s = s.decode('utf-8')
         t = translator.directTranslate(s)
-        print '\n'
-        print t.encode('utf-8')
+        if config['pretty_print_output']:
+          cprint("ITALIAN:", 'blue')
+          print(s.encode('utf-8'))
+          cprint("TRANSLATION:", 'blue')
+          print(t.encode('utf-8'))
+          cprint("GOLD:", 'blue')
+          print(gold)
+        else:
+          print(s.encode('utf-8'))
+          print(t.encode('utf-8'))
+        print("")
+        print("")
 
 
 if __name__ == '__main__':

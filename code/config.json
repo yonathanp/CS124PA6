@@ -1,0 +1,6 @@
+{
+  "dictionary_file": "../dic/dictionary.json",
+  "dev_sentence_file": "../corpus/ita_dev.txt",
+  "dev_gold_file": "../corpus/eng_dev.txt",
+  "pretty_print_output": true
+}
