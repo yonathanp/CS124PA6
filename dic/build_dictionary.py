@@ -28,13 +28,9 @@ def add_line(line):
 
 for line in open(FIRST_DATAFILE):
   add_line(line)
-  pass
 for line in open(SECOND_DATAFILE):
   add_line(line)
-  pass
 for line in open(THIRD_DATAFILE):
-  m = re.match(r'"(.*?)"\s*=\s*\[(.*?)\]', line.rstrip())
-  for word in re.findall(r'"(.*?)"', m.group(2)):
-    results[m.group(1)].append(word)
+  add_line(line)
 
 print(json.dumps(results, indent=2, sort_keys=True, ensure_ascii=False))

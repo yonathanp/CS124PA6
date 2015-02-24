@@ -98,7 +98,8 @@ fatti
 giorni
 	day
 sono
-
+  be
+  exist
 giorno
 	day
 	daytime
