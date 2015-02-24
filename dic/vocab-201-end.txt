@@ -70,7 +70,7 @@ quanto
 	everything
 	as
 	such
-sollevarec
+sollevare
 	lift
 	lift up
 	hoist
@@ -139,7 +139,8 @@ richiesta
 	require
 18
 	18
-interrogation
+interrogazioni
+	interrogation
 	oral exam
 	oral test
 	point of order
@@ -202,7 +203,8 @@ diversi
 	diverse
 	various
 	several
-condolence
+condoglianze
+	condolence
 mio
 	my
 	mine
@@ -254,10 +256,12 @@ più
 	further
 	plus
 	most
-access
+accesso
+	access
 	entry
 	admission
-just
+semplicemente	
+	just
 	only
 	simply
 	merely
@@ -265,9 +269,11 @@ just
 abc
 	abc
 	alphabet
-benefit
+beneficiato	
+	benefit
 	take advantage
-session
+seduta	
+	session
 	assembly
 	meeting
 	sit
