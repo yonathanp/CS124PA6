@@ -1,0 +1,410 @@
+﻿dato	NN <unknown>	JJ <unknown>	NP <unknown>	RB <unknown>	VVG <unknown>	NNS <unknown>
+hand	NN hand	RB hand	VV hand
+over	IN over	RP over	RB over
+offer	NN offer	JJR off	VV offer	VVP offer
+hand	NN hand	RB hand	VV hand
+out	IN out	RB out	RP out	NN out	JJ out
+assign	NN assign	VVP assign	VV assign
+allocate	VVP allocate	VV allocate
+give	VV give	VVP give
+occasione	NN <unknown>	NP <unknown>	JJ <unknown>	VVG <unknown>	NNS <unknown>	RB <unknown>
+occasion	NN occasion	VV occasion	VVP occasion
+circumstance	NN circumstance
+situation	NN situation
+opportunity	NN opportunity
+excuse	NN excuse	VV excuse	VVP excuse
+opportuno	NN <unknown>	NNS <unknown>	VVZ <unknown>	VVG <unknown>	NP <unknown>	RB <unknown>	JJ <unknown>	VVN <unknown>
+suitable	JJ suitable
+fit	JJ fit	NN fit	VVP fit	VVN fit
+opportune	JJ opportune
+well-timed	JJ well-timed
+appropriate	JJ appropriate
+lettera	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+letter	NN letter
+writing	VVG write	NN writing
+character	NN character
+literature	NN literature
+lieti	NNS <unknown>	NN <unknown>	JJ <unknown>
+happy	JJ happy
+content	NN content	JJ content
+chiesto	NN <unknown>	NNS <unknown>	RB <unknown>	NP <unknown>	JJ <unknown>
+ask	VV ask	VVP ask
+for	IN for
+request	NN request
+ask	VVP ask	VV ask
+require	VV require	VVP require
+demand	NN demand	VV demand	VVP demand
+inserite	NN <unknown>	JJ <unknown>	NNS <unknown>
+insert	NN insert	VV insert	VVP insert
+assimilate	VV assimilate	VVP assimilate
+integrate	VV integrate	VVP integrate
+include	VV include	VVP include
+hack	JJ hack	NN hack	VV hack
+risposta	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+response	NN response
+reply	NN reply	VV reply	VVP reply
+answer	NN answer	VV answer	VVP answer
+reaction	NN reaction
+backlash	NN backlash
+lanka	NN <unknown>	NP Lanka	NNS <unknown>	JJ <unknown>
+Lanka	NP Lanka
+ricerche	NN <unknown>	NP <unknown>
+research	NN research
+survey	NN survey	VV survey	VVP survey
+search	NN search	VVP search	VV search
+study	NN study	VV study	VVP study
+dÃ­ez	NN <unknown>	NP <unknown>	NNS <unknown>	JJ <unknown>
+DÃ­ez	NP <unknown>
+merito	NP <unknown>	NN <unknown>	JJ <unknown>	RB <unknown>	NNS <unknown>
+merit	NN merit	VV merit	VVP merit
+credit	NN credit
+value	NN value	VVP value
+matter	NN matter	VV matter	JJR matt	VVP matter
+quality	NN quality	JJ quality
+aver	VV aver	VVP aver
+own	JJ own	VV own	VVP own
+possess	VVP possess	VV possess
+contain	VV contain	VVP contain
+have	VHP have	VH have
+obtain	VV obtain	VVP obtain
+quanto	RB <unknown>	NN <unknown>	JJ <unknown>	NP <unknown>	NNS <unknown>	VVG <unknown>
+how	WRB how
+many	JJ many	RB many	DT many
+how	WRB how
+much	JJ much	RB much
+everything	NN everything
+as	IN as	RB as
+such	JJ such	PDT such
+sollevare	NN <unknown>	JJ <unknown>	NNS <unknown>	NP <unknown>
+lift	NN lift	VV lift	VVP lift
+lift	NN lift	VV lift	VVP lift
+up	IN up	RB up	RP up
+hoist	NN hoist	VVP hoist	VV hoist
+relieve	VV relieve	VVP relieve
+release	NN release	VV release	VVP release
+altre	NN <unknown>	JJ <unknown>	VVP <unknown>	NNS <unknown>	VV <unknown>	NP <unknown>
+other	JJ other
+different	JJ different
+remaining	VVG remain	JJ remaining
+more	RBR more	JJR more
+last	JJ last	RB last
+riferite	NN <unknown>	JJ <unknown>
+recount	NN recount	VVP recount	VV recount
+report	NN report	VV report	VVP report
+relate	VVP relate	VV relate
+credit	NN credit	VV credit
+attribute	NN attribute	VVP attribute	VV attribute
+ultima	NN ultima
+last	JJ last	RB last	VV last	NN last
+final	JJ final	NN final
+latest	JJ latest	JJS late	RB latest
+recent	JJ recent
+farthest	JJ farthest	RB farthest
+corso	NN <unknown>	NP Corso	JJ <unknown>	NNS <unknown>
+course	NN course
+flow	NN flow	VV flow	VVP flow
+circulation	NN circulation
+run	NN run	VVN run	VVP run	VV run	VVD run
+pubblico	NN <unknown>	NP <unknown>	NNS <unknown>	JJ <unknown>	RB <unknown>	VVG <unknown>	VVZ <unknown>	VVN <unknown>
+public	JJ public	NN public
+state	NN state
+audience	NN audience
+people	NNS people
+community	NN community
+abbiate	JJ <unknown>	NN <unknown>	VVP <unknown>	VV <unknown>	NNS <unknown>
+own	JJ own	VVP own	VV own
+possess	VVP possess	VV possess
+contain	VV contain	VVP contain
+have	VHP have	VH have
+obtain	VV obtain	VVP obtain
+trascorso	NN <unknown>	NNS <unknown>	NP <unknown>	RB <unknown>	JJ <unknown>	VVG <unknown>	VVN <unknown>
+enjoy	VVP enjoy	VV enjoy
+spend	VV spend	VVP spend
+pass	VV pass	NN pass	VVP pass
+go	VV go	VVP go	NN go	JJ go
+by	IN by	RB by
+skim	NN skim	VV skim
+through	IN through	RP through
+abbia	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+own	JJ own	VVP own	VV own
+possess	VVP possess	VV possess
+contain	VV contain	VVP contain
+have	VHP have	VH have
+obtain	VV obtain	VVP obtain
+colleghi	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>	VVG <unknown>	RB <unknown>	VVN <unknown>
+colleague	NN colleague
+coworker	NN coworker
+co-worker	NN co-worker
+connect	VVP connect	VV connect
+relate	VVP relate	VV relate
+17	CD @card@
+17	CD @card@
+richiesta	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+request	NN request	VVP request	VV request
+application	NN application
+demand	NN demand	VVP demand	VV demand
+ask	VVP ask	VV ask
+require	VV require	VVP require
+18	CD @card@
+18	CD @card@
+interrogazioni	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+interrogation	NN interrogation
+oral	JJ oral
+exam	NN exam
+oral	JJ oral
+test	NN test
+point	NN point	VVP point	VV point
+of	IN of
+order	NN order
+un	NNS <unknown>	NN <unknown>	RB <unknown>	VVZ <unknown>	VVG <unknown>	VVD <unknown>	JJ <unknown>	VVN <unknown>	VVP <unknown>	VV <unknown>
+one	CD one	PP one	NN one
+a	DT a	NN a
+an	DT an
+ancora	NN <unknown>	NNS <unknown>	NP <unknown>	VVG <unknown>	JJ <unknown>
+again	RB again
+still	RB still
+even	RB even
+now	RB now
+even	RB even	JJ even	VV even
+tema	NN <unknown>	JJ <unknown>	NP <unknown>	NNS <unknown>
+subject	JJ subject	NN subject	VV subject
+theme	NN theme
+topic	NN topic
+essay	NN essay	VV essay	VVP essay
+tuttavia	NNS <unknown>	NN <unknown>
+however	RB however
+nevertheless	RB nevertheless
+altresÃ¬	JJ <unknown>	NN <unknown>	NP <unknown>	NNS <unknown>
+moreover	RB moreover
+russia	NP Russia	JJ <unknown>	NN <unknown>	NNS <unknown>
+Russia	NP Russia
+interrotta	NP <unknown>	NNS <unknown>	NN <unknown>
+interrupt	VV interrupt	VVP interrupt
+suspend	VV suspend	VVP suspend
+stop	NN stop	VV stop	VVP stop
+perchÃ©	NNS <unknown>	NN <unknown>	RB <unknown>	VVZ <unknown>	JJ <unknown>	VVG <unknown>	VVN <unknown>	VVD <unknown>	VV <unknown>
+why	WRB why	RB why	NN why
+because	RB because	IN because
+since	IN since	RB since
+so	RB so	IN so	CC so
+that	DT that	WDT that	IN/that that
+reason	NN reason
+ai	VVZ ai	VVP ai	NN ai
+at	IN at
+the	DT the
+in	IN in	RB in
+the	DT the
+to	TO to
+the	DT the
+by	IN by	RB by
+the	DT the
+on	IN on	RB on
+the	DT the
+sentito	NN <unknown>	NP <unknown>	RB <unknown>	NNS <unknown>	JJ <unknown>
+hear	VVP hear	VV hear
+sense	NN sense	VVP sense	VV sense
+feel	VVP feel	NN feel	VV feel
+smell	NN smell	VVP smell	VV smell
+like	IN like	VVP like	JJ like
+al	NP al
+at	IN at
+the	DT the
+in	IN in	RB in
+the	DT the
+to	TO to
+the	DT the
+by	IN by	RB by
+the	DT the
+on	IN on	RB on
+the	DT the
+sull	NN <unknown>	JJ <unknown>	NP <unknown>	NNS <unknown>
+'	'' '	POS '
+on	IN on	RB on
+the	DT the
+above	IN above	RB above	JJ above
+the	DT the
+over	IN over	RB over	RP over
+the	DT the
+at	IN at
+the	DT the
+about	IN about	RB about
+the	DT the
+diversi	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>	VVG <unknown>	RB <unknown>	VVN <unknown>
+different	JJ different
+diverse	JJ diverse
+various	JJ various
+several	JJ several
+condoglianze	NN <unknown>	NP <unknown>	JJ <unknown>	NNS <unknown>
+condolence	NN condolence
+mio	NP mio
+my	PP$ my
+mine	JJ mine	NN mine
+mia	NP mia
+my	PP$ my
+mine	NN mine	JJ mine
+cuore	NN <unknown>	JJ <unknown>	VVD <unknown>	RB <unknown>	NNS <unknown>	NP <unknown>
+heart	NN heart	RB heart	VVP heart
+core	NN core	JJ core
+essence	NN essence
+affection	NN affection
+fortitude	NN fortitude
+intendo	NN <unknown>	RB <unknown>	NNS <unknown>	JJ <unknown>	NP <unknown>
+understand	VVP understand	VV understand
+interpret	VV interpret	VVP interpret
+mean	JJ mean	VV mean	NN mean	VVP mean
+pacifica	NN <unknown>	NNS <unknown>	NP Pacifica	JJ <unknown>	RB <unknown>	VVG <unknown>	VVZ <unknown>
+peaceful	JJ peaceful
+pacific	JJ pacific
+pacify	VVP pacify
+reconcile	VV reconcile	VVP reconcile
+assassinii	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>	VVG <unknown>	RB <unknown>	VVN <unknown>
+murder	NN murder	VVP murder	VV murder
+europea	NNS <unknown>	NN <unknown>	JJ <unknown>	NP <unknown>
+European	JJ European	NP European
+tornata	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+session	NN session
+return	NN return	VV return	VVP return
+go	VVP go	VV go	NN go	JJ go
+back	RB back	JJ back	NN back
+resume	VV resume	VVP resume	NN resume
+start	NN start	VV start	VVP start
+again	RB again
+diretti	NP <unknown>	NN <unknown>	JJ <unknown>	RB <unknown>	NNS <unknown>
+direct	JJ direct	RB direct	VV direct	VVP direct
+focus	NN focus	VVP focus	VV focus
+directly	RB directly	IN directly
+non-stop	JJ non-stop	RB non-stop
+aim	NN aim	VVP aim	VV aim
+europeo	NN <unknown>	NP <unknown>	NNS <unknown>	RB <unknown>	JJ <unknown>	VVG <unknown>	VVZ <unknown>	VVN <unknown>
+European	JJ European	NP European	NN European
+avessero	NN <unknown>	NP <unknown>	NNS <unknown>	JJ <unknown>	VVG <unknown>	RB <unknown>
+own	JJ own	VVP own	VV own
+possess	VVP possess	VV possess
+contain	VV contain	VVP contain
+have	VHP have	VH have
+obtain	VV obtain	VVP obtain
+piÃ¹	NN <unknown>	JJ <unknown>	NP <unknown>	NNS <unknown>
+more	RBR more	JJR more
+any	DT any	RB any
+more	RBR more	JJR more
+further	RBR further	JJR further	VV further
+plus	IN plus	CC plus
+most	JJS most	RBS most
+accesso	NN <unknown>	JJ <unknown>	NP <unknown>	NNS <unknown>	VVN <unknown>	VVG <unknown>
+access	NN access	VV access
+entry	NN entry
+admission	NN admission
+semplicemente	NN <unknown>	NNS <unknown>	RB <unknown>	JJ <unknown>	NP <unknown>
+just	RB just
+only	RB only	JJ only
+simply	RB simply
+merely	RB merely
+easily	RB easily
+abc	NN <unknown>	JJ <unknown>	NP <unknown>
+abc	NN <unknown>	JJ <unknown>	NP <unknown>
+alphabet	NN alphabet
+beneficiato	NN <unknown>	JJ <unknown>	RB <unknown>	NNS <unknown>	NP <unknown>	VVG <unknown>
+benefit	NN benefit	VV benefit	VVP benefit
+take	VV take	VVP take	NN take
+advantage	NN advantage	VV advantage
+seduta	NN <unknown>	NNS <unknown>	JJ <unknown>	NP <unknown>
+session	NN session
+assembly	NN assembly
+meeting	NN meeting	VVG meet
+sit	NN sit	VVP sit	VV sit
+be	VB be
+seated	VVN seat
+sulla	NN <unknown>	NNS <unknown>	NP Sulla	VVG <unknown>
+on	IN on
+the	DT the
+above	IN above	RB above	JJ above
+the	DT the
+over	IN over	RB over	RP over
+the	DT the
+at	IN at
+the	DT the
+about	IN about	RB about
+the	DT the
+dell	NN dell
+'	'' '	POS '
+of	IN of
+from	IN from
+than	IN than
+on	IN on	RB on
+above	IN above	RB above	JJ above
+out	RB out	IN out	RP out	NN out	JJ out
+of	IN of
+grave	JJ grave	NN grave	RB grave
+subject	NN subject	JJ subject
+to	TO to
+gravity	NN gravity
+heavy	JJ heavy	NN heavy
+difficult	JJ difficult
+serious	JJ serious
+deep	JJ deep	NN deep	RB deep
+invitarla	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+invite	NN invite	VV invite	VVP invite
+exhort	VV exhort	VVP exhort
+encourage	VV encourage	VVP encourage
+osservi	NNS <unknown>	NN <unknown>	JJ <unknown>	RB <unknown>	NP <unknown>
+watch	VVP watch	NN watch	VV watch
+follow	VV follow	NN follow	VVP follow
+respect	NN respect	VV respect
+observe	VVP observe	VV observe
+abide	VV abide	VVP abide
+by	IN by
+sancito	NN <unknown>	JJ <unknown>	NP <unknown>	RB <unknown>	NNS <unknown>	VVG <unknown>
+sanction	NN sanction	VVP sanction	VV sanction
+ratify	VV ratify	VVP ratify
+set	VVN set	NN set	VV set	VVD set	VVP set	JJ set
+forth	RB forth	IN forth
+esplosioni	NN <unknown>	NP <unknown>	JJ <unknown>	NNS <unknown>	VVG <unknown>	VVN <unknown>	RB <unknown>	VVZ <unknown>
+explosion	NN explosion
+burst	NN burst	VVD burst	VVP burst	VVN burst	VV burst
+eruption	NN eruption
+outburst	NN outburst
+outbreak	NN outbreak
+hanno	NN <unknown>	NNS <unknown>	VVZ <unknown>	VVG <unknown>	NP <unknown>	RB <unknown>	JJ <unknown>	VVN <unknown>
+own	JJ own	VVP own	VV own
+possess	VVP possess	VV possess
+contain	VV contain	VVP contain
+have	VHP have	VH have
+obtain	VV obtain	VVP obtain
+silenzio	NN <unknown>	NP <unknown>	JJ <unknown>	NNS <unknown>	VVG <unknown>	RB <unknown>
+silence	NN silence	VV silence	VVP silence
+stillness	NN stillness
+calm	JJ calm	NN calm	VV calm	VVP calm
+oblivion	NN oblivion
+peace	NN peace
+signora	NN signora
+lady	NN lady
+woman	NN woman	VVP woman	VV woman
+Mrs.	NP Mrs.
+madam	NN madam
+wife	NN wife
+servizi	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>	VVG <unknown>	VVZ <unknown>	VVN <unknown>
+service	NN service	VV service	VVP service
+toilet	NN toilet
+inviasse	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>
+send	VV send	VVP send	NN send
+forward	RB forward	JJ forward	NN forward	VV forward
+dispatch	VV dispatch	NN dispatch	VVP dispatch
+collegio	NN <unknown>	NNS <unknown>	NP <unknown>	JJ <unknown>	RB <unknown>	VVG <unknown>
+boarding	VVG board	NN boarding
+school	NN school
+college	NN college
+association	NN association
+electoral	JJ electoral
+constituency	NN constituency
+prossimi	NNS <unknown>	NN <unknown>	VVZ <unknown>	VVG <unknown>	NP <unknown>	RB <unknown>	JJ <unknown>
+next	JJ next	RB next	IN next
+near	IN near	JJ near	RB near	NN near
+close	JJ close	NN close	RB close	VV close
+relative	JJ relative	NN relative
+neighbor	NN neighbor
+ho	NN <unknown>	NNS <unknown>	VVZ <unknown>	VVG <unknown>	NP Ho	RB <unknown>	JJ <unknown>	VVN <unknown>
+own	JJ own	VVP own	VV own
+possess	VVP possess	VV possess
+contain	VV contain	VVP contain
+have	VHP have	VH have
+obtain	VV obtain	VVP obtain
