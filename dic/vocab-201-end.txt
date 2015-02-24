@@ -12,7 +12,7 @@
 "merito" = ["merit", "credit", "value", "matter", "quality" ]
 "aver" = ["own", "possess", "contain", "have", "obtain"]
 "quanto" = ["how many", "how much", "everything", "as", "such" ] 
-"sollevarec" = ["lift", "lift up", "hoist", "relieve", "release"]
+"sollevare" = ["lift", "lift up", "hoist", "relieve", "release"]
 "altre" = ["other", "different", "remaining", "more", "last"]
 "riferite" = ["recount", "report", "relate", "credit", "attribute"]
 "ultima" = ["last", "final", "latest", "recent", "farthest"]

@@ -5,11 +5,15 @@
   "18": [
     "18"
   ],
-  "a": [],
+  "a": [
+    "at",
+    "in",
+    "to",
+    "by",
+    "on"
+  ],
   "abbattute": [
     "demolish",
-    "overthrow",
-    "depose",
     "kill"
   ],
   "abbia": [
@@ -20,7 +24,11 @@
     "obtain"
   ],
   "abbiamo": [
-    "we have"
+    "own",
+    "possess",
+    "contain",
+    "have",
+    "obtain"
   ],
   "abbiate": [
     "own",
@@ -47,11 +55,11 @@
     "accuse"
   ],
   "ai": [
-    "at",
-    "in",
-    "to",
-    "by",
-    "on"
+    "at the",
+    "in the",
+    "to the",
+    "by the",
+    "on the"
   ],
   "al": [
     "at the",
@@ -61,18 +69,27 @@
     "on the"
   ],
   "alcune": [
-    "several"
+    "some"
   ],
   "alcuni": [
-    "some",
-    "several"
+    "some"
   ],
-  "alexander": [],
+  "alexander": [
+    "Alexander"
+  ],
   "all'": [
-    "to the"
+    "at the",
+    "in the",
+    "to the",
+    "by the",
+    "on the"
   ],
   "alla": [
-    "to the"
+    "at the",
+    "in the",
+    "to the",
+    "by the",
+    "on the"
   ],
   "altre": [
     "other",
@@ -95,8 +112,7 @@
     "also",
     "too",
     "although",
-    "even",
-    "further"
+    "even"
   ],
   "ancora": [
     "again",
@@ -116,7 +132,7 @@
   ],
   "appello": [
     "roll call",
-    "head count",
+    "attendance",
     "plea",
     "address",
     "appeal"
@@ -129,10 +145,13 @@
     "as soon as"
   ],
   "approva": [
-    "approve"
+    "approve",
+    "ratify"
   ],
   "appunto": [
-    "newspaper"
+    "note",
+    "exactly",
+    "indeed"
   ],
   "assai": [
     "very",
@@ -142,20 +161,18 @@
     "murder"
   ],
   "assolto": [
-    "absolved",
-    "acquited"
+    "acquit",
+    "absolve"
   ],
   "atti": [
-    "proceedings",
-    "records"
-  ],
-  "atto": [
-    "apt",
-    "gesture",
-    "act"
+    "proceeding",
+    "record",
+    "act",
+    "suitable"
   ],
   "auguri": [
-    "wishes"
+    "wishes",
+    "regards"
   ],
   "aver": [
     "own",
@@ -163,13 +180,6 @@
     "contain",
     "have",
     "obtain"
-  ],
-  "avere": [
-    "own",
-    "obtain",
-    "keep",
-    "feel",
-    "wear"
   ],
   "avessero": [
     "own",
@@ -180,10 +190,28 @@
   ],
   "avete": [
     "own",
-    "obtain",
-    "keep",
-    "feel",
-    "wear"
+    "possess",
+    "contain",
+    "have",
+    "obtain"
+  ],
+  "avevamo": [
+    "have",
+    "possess",
+    "contain",
+    "own"
+  ],
+  "avrà": [
+    "have",
+    "possess",
+    "contain",
+    "own"
+  ],
+  "avrò": [
+    "have",
+    "possess",
+    "contain",
+    "own"
   ],
   "beneficiato": [
     "benefit",
@@ -192,7 +220,9 @@
   "buone": [
     "good",
     "happy",
-    "merry"
+    "tasty",
+    "suitable",
+    "coupon"
   ],
   "caso": [
     "chance",
@@ -203,15 +233,12 @@
   ],
   "certa": [
     "certain",
+    "convinced",
     "certainly",
-    "certainty"
+    "some"
   ],
   "che": [
-    "that",
-    "because",
-    "when",
-    "on condition that",
-    "though"
+    "that"
   ],
   "chiesto": [
     "ask for",
@@ -223,7 +250,6 @@
   "cioè": [
     "that is",
     "namely",
-    "meaning what?",
     "actually",
     "rather"
   ],
@@ -244,21 +270,22 @@
     "how",
     "same as",
     "as",
-    "as though",
-    "as much as"
+    "as though"
   ],
   "commesso": [
     "salesperson",
     "clerk",
-    "committed"
+    "commit"
   ],
   "commissario": [
     "commissioner"
   ],
-  "competente": [
+  "competenti": [
     "expert",
     "in charge",
-    "specialist"
+    "specialist",
+    "compete",
+    "be the responsibility of"
   ],
   "condoglianze": [
     "condolence"
@@ -272,16 +299,21 @@
   "costituzione": [
     "constitution",
     "founding",
-    "character",
+    "build",
     "establishment"
   ],
-  "criminale": [
+  "criminali": [
     "criminal",
     "crime",
     "illegal",
     "delinquent"
   ],
-  "cui": [],
+  "cui": [
+    "who",
+    "which",
+    "whose",
+    "that"
+  ],
   "cuore": [
     "heart",
     "core",
@@ -292,13 +324,21 @@
   "da": [
     "from",
     "to",
-    "at"
+    "at",
+    "since",
+    "give"
   ],
   "dal": [
-    "from the"
+    "from the",
+    "to the",
+    "at the",
+    "since the"
   ],
   "dalla": [
-    "from the"
+    "from the",
+    "to the",
+    "at the",
+    "since the"
   ],
   "data": [
     "date",
@@ -314,13 +354,23 @@
     "give"
   ],
   "de": [
-    "of"
+    "de"
   ],
   "dei": [
-    "god",
-    "hero"
+    "of the",
+    "from the",
+    "than the",
+    "on the",
+    "at the",
+    "god"
   ],
-  "del": [],
+  "del": [
+    "of the",
+    "from the",
+    "than the",
+    "on the",
+    "at the"
+  ],
   "dell'": [
     "of",
     "from",
@@ -329,9 +379,21 @@
     "above",
     "out of"
   ],
-  "della": [],
-  "delle": [],
-  "desiderare": [
+  "della": [
+    "of the",
+    "from the",
+    "than the",
+    "on the",
+    "at the"
+  ],
+  "delle": [
+    "of the",
+    "from the",
+    "than the",
+    "on the",
+    "at the"
+  ],
+  "desidera": [
     "want",
     "desire",
     "wish",
@@ -339,13 +401,21 @@
     "demand"
   ],
   "desiderio": [
-    "desire"
+    "desire",
+    "wish",
+    "lust",
+    "craving",
+    "longing"
   ],
   "determinate": [
-    "determine"
+    "determine",
+    "certain",
+    "establish"
   ],
   "determinato": [
-    "determined"
+    "establish",
+    "determined",
+    "certain"
   ],
   "di": [
     "of",
@@ -357,20 +427,22 @@
   "dicembre": [
     "December"
   ],
-  "dichiarazione": [
+  "dichiarazioni": [
     "release",
-    "bulletin",
     "statement",
     "declaration",
-    "tax return"
+    "affidavit"
   ],
   "dichiaro": [
     "declare",
     "state",
-    "proclaim"
+    "proclaim",
+    "announce"
   ],
   "difficile": [
-    "difficult"
+    "difficult",
+    "hard",
+    "complicated"
   ],
   "diretti": [
     "direct",
@@ -380,21 +452,22 @@
     "aim"
   ],
   "diritto": [
-    "direct"
+    "straight",
+    "right",
+    "claim"
   ],
   "discussione": [
     "discussion",
     "debate",
     "argument",
-    "quarrel",
-    "closing argument"
+    "quarrel"
   ],
-  "disposizione": [
+  "disposizioni": [
     "arrangement",
     "disposition",
     "disposal",
     "instruction",
-    "regulation"
+    "order"
   ],
   "diversi": [
     "different",
@@ -405,9 +478,16 @@
   "díez": [
     "Díez"
   ],
-  "e": [],
-  "e'": [],
-  "ed": [],
+  "e": [
+    "and"
+  ],
+  "e'": [
+    "be",
+    "exist"
+  ],
+  "ed": [
+    "and"
+  ],
   "errore": [
     "error",
     "mistake",
@@ -415,7 +495,7 @@
     "misunderstanding",
     "fault"
   ],
-  "esaminare": [
+  "esaminerò": [
     "examine",
     "analyze",
     "test"
@@ -427,12 +507,12 @@
     "outburst",
     "outbreak"
   ],
-  "esporre": [
+  "esposta": [
     "exhibit",
     "display",
-    "express",
-    "present",
-    "expose"
+    "show",
+    "explain",
+    "present"
   ],
   "esprimere": [
     "expres",
@@ -446,57 +526,72 @@
   "europeo": [
     "European"
   ],
-  "fare": [],
+  "fare": [
+    "make",
+    "do"
+  ],
   "fatti": [
-    "business"
+    "fact",
+    "case",
+    "do",
+    "make"
   ],
   "fatto": [
     "fact",
-    "completed",
-    "finished",
-    "made"
+    "case",
+    "do",
+    "make"
   ],
   "fine": [
-    "acute",
     "refined",
-    "exquisite",
     "goal",
-    "subtle"
+    "subtle",
+    "objective",
+    "end"
   ],
   "frattempo": [
     "meantime",
     "interim"
   ],
   "giornale": [
+    "journal",
     "newspaper"
   ],
   "giornali": [
-    "papers"
+    "newspaper",
+    "journal",
+    "diary"
   ],
   "giorni": [
-    "days"
+    "day"
   ],
   "giorno": [
-    "day"
+    "day",
+    "daytime",
+    "anniversary"
   ],
   "giovedì": [
     "Thursday"
   ],
   "giudiziario": [
     "judiciary",
-    "judicial"
+    "judicial",
+    "court"
   ],
   "giungere": [
-    "arrive"
+    "arrive at",
+    "join",
+    "reach"
   ],
   "già": [
     "by now",
     "already",
     "before",
-    "as it is",
     "indeed"
   ],
-  "gonzález": [],
+  "gonzález": [
+    "González"
+  ],
   "grave": [
     "subject to gravity",
     "heavy",
@@ -518,11 +613,21 @@
     "have",
     "obtain"
   ],
-  "i": [],
-  "il": [],
-  "in": [],
+  "i": [
+    "the"
+  ],
+  "il": [
+    "the"
+  ],
+  "in": [
+    "in",
+    "to",
+    "at",
+    "into"
+  ],
   "informazioni": [
-    "information"
+    "information",
+    "communication"
   ],
   "innumerevoli": [
     "innumerable"
@@ -540,7 +645,8 @@
     "mean"
   ],
   "interessati": [
-    "interest"
+    "interest",
+    "involve"
   ],
   "interrogazioni": [
     "interrogation",
@@ -554,7 +660,8 @@
     "stop"
   ],
   "intervento": [
-    "intervention"
+    "intervention",
+    "speech"
   ],
   "inviasse": [
     "send",
@@ -566,13 +673,25 @@
     "exhort",
     "encourage"
   ],
-  "io": [],
-  "l'": [],
-  "la": [],
+  "io": [
+    "I",
+    "me"
+  ],
+  "l'": [
+    "the",
+    "him"
+  ],
+  "la": [
+    "the",
+    "her"
+  ],
   "lanka": [
     "Lanka"
   ],
-  "le": [],
+  "le": [
+    "the",
+    "them"
+  ],
   "lei": [
     "she",
     "you"
@@ -585,17 +704,20 @@
   ],
   "letto": [
     "read",
-    "bed",
-    "riverbed",
-    "bedding"
+    "bed"
   ],
   "lieti": [
     "happy",
     "content"
   ],
-  "lo": [],
+  "lo": [
+    "the",
+    "his"
+  ],
   "memoria": [
-    "memory"
+    "memory",
+    "recollection",
+    "rememberance"
   ],
   "merito": [
     "merit",
@@ -605,25 +727,27 @@
     "quality"
   ],
   "messo": [
-    "well dressed",
+    "well-dressed",
     "put",
-    "placed",
+    "place",
     "well-built",
     "messenger"
   ],
   "mi": [
-    "me",
-    "to me"
+    "to me",
+    "I"
   ],
   "mia": [
     "my",
     "mine"
   ],
   "miei": [
-    "my"
+    "my",
+    "mine"
   ],
   "migliori": [
-    "improve"
+    "improve",
+    "best"
   ],
   "ministero": [
     "department",
@@ -634,36 +758,52 @@
     "minor",
     "fine",
     "delicate",
-    "slight"
+    "minute"
   ],
   "mio": [
     "my",
     "mine"
   ],
   "modo": [
-    "mode"
+    "mode",
+    "manner",
+    "way"
   ],
   "morti": [
-    "slain"
+    "death",
+    "dead"
   ],
   "nei": [
     "in the",
-    "moles",
-    "flaws"
+    "at the",
+    "to the",
+    "into the",
+    "mole"
   ],
   "nel": [
     "in the",
-    "in"
+    "to the",
+    "at the",
+    "into the"
   ],
   "nell'": [
-    "in the"
+    "in",
+    "to",
+    "at",
+    "into"
   ],
   "nella": [
-    "in the"
+    "in the",
+    "to the",
+    "at the",
+    "into the"
   ],
-  "nikitin": [],
+  "nikitin": [
+    "Nikitin"
+  ],
   "noi": [
-    "we"
+    "we",
+    "us"
   ],
   "non": [
     "not"
@@ -680,8 +820,7 @@
   ],
   "nuovamente": [
     "again",
-    "one more time",
-    "from the top"
+    "one more time"
   ],
   "occasione": [
     "occasion",
@@ -693,7 +832,7 @@
   "onorevole": [
     "honorable"
   ],
-  "opinione": [
+  "opinioni": [
     "opinion",
     "viewpoint",
     "esteem",
@@ -707,10 +846,12 @@
     "appropriate"
   ],
   "ora": [
-    "hour"
+    "hour",
+    "now",
+    "time"
   ],
   "ordigni": [
-    "explosives"
+    "explosive"
   ],
   "ordine": [
     "order",
@@ -720,7 +861,9 @@
     "directive"
   ],
   "osservare": [
-    "observe"
+    "observe",
+    "respect",
+    "follow"
   ],
   "osservi": [
     "watch",
@@ -730,7 +873,8 @@
     "abide by"
   ],
   "ottenuto": [
-    "obtained"
+    "reach",
+    "obtain"
   ],
   "pacifica": [
     "peaceful",
@@ -739,13 +883,21 @@
     "reconcile"
   ],
   "paesi": [
-    "countries"
+    "country",
+    "land",
+    "nation"
   ],
-  "palacio": [],
+  "palacio": [
+    "Palacio"
+  ],
   "parlamento": [
     "parliament"
   ],
-  "per": [],
+  "per": [
+    "for",
+    "in order to",
+    "becuase of"
+  ],
   "perché": [
     "why",
     "because",
@@ -757,7 +909,7 @@
     "but",
     "yet",
     "however",
-    "well"
+    "though"
   ],
   "più": [
     "more",
@@ -769,23 +921,30 @@
   "plenaria": [
     "plenary"
   ],
-  "potere": [],
+  "potere": [
+    "can",
+    "power"
+  ],
   "precedente": [
     "previous",
     "preceding",
-    "prior event",
     "premise",
     "precedent"
   ],
   "precedenza": [
-    "precedence"
+    "precedence",
+    "priority"
   ],
   "pregiudiziale": [
     "preliminary",
     "precondition"
   ],
   "presentato": [
-    "presented"
+    "present",
+    "introduce",
+    "exhibit",
+    "display",
+    "pose"
   ],
   "presente": [
     "present",
@@ -805,7 +964,11 @@
     "neighbor"
   ],
   "pubblicate": [
-    "publish"
+    "publish",
+    "print",
+    "publicize",
+    "disseminate",
+    "advertise"
   ],
   "pubblico": [
     "public",
@@ -828,29 +991,33 @@
     "as",
     "such"
   ],
-  "quell'": [],
-  "questione": [
-    "question"
+  "quell'": [
+    "that"
   ],
-  "questo": [
+  "questa": [
     "this",
-    "these",
     "such",
-    "this one",
-    "he"
+    "this one"
   ],
-  "questore": [
+  "questione": [
+    "question",
+    "matter"
+  ],
+  "questori": [
     "commissioner"
   ],
   "reati": [
-    "crime"
+    "crime",
+    "violation",
+    "misdemeanor",
+    "felony"
   ],
-  "relativo": [
+  "relativi": [
     "related",
     "connected",
     "concerning",
     "relative",
-    "relevant"
+    "pertaining"
   ],
   "relazione": [
     "connection",
@@ -862,11 +1029,10 @@
   "resto": [
     "remainder",
     "change",
-    "remains",
-    "ruins",
-    "relics"
+    "rest",
+    "remain"
   ],
-  "ribadire": [
+  "ribadendo": [
     "reiterate",
     "restate",
     "reaffirm",
@@ -880,7 +1046,9 @@
     "study"
   ],
   "ricevuto": [
-    "received"
+    "receive",
+    "suffer",
+    "obtain"
   ],
   "richiesta": [
     "request",
@@ -892,7 +1060,12 @@
   "riconciliazione": [
     "reconciliation"
   ],
-  "ricorrerà": [],
+  "ricorrerà": [
+    "resort",
+    "draw upon",
+    "petition",
+    "appeal"
+  ],
   "riferite": [
     "recount",
     "report",
@@ -900,7 +1073,7 @@
     "credit",
     "attribute"
   ],
-  "riguardare": [
+  "riguardavano": [
     "look at again",
     "review",
     "inspect",
@@ -909,13 +1082,15 @@
   ],
   "rilevare": [
     "remove",
-    "take off",
+    "observe",
     "measure",
     "notice",
     "take over"
   ],
   "rinnovo": [
-    "renewal"
+    "renewal",
+    "renew",
+    "restore"
   ],
   "ripresa": [
     "retake",
@@ -935,7 +1110,9 @@
     "backlash"
   ],
   "risultati": [
-    "results"
+    "result",
+    "outcome",
+    "solution"
   ],
   "ritenuto": [
     "retain",
@@ -951,11 +1128,10 @@
     "sanction",
     ", "
   ],
-  "sapere": [
+  "sappiamo": [
     "be able",
     "think",
     "know",
-    "understand",
     "taste"
   ],
   "sarebbe": [
@@ -965,8 +1141,13 @@
     "past",
     "last"
   ],
-  "scroedter": [],
-  "se": [],
+  "scroedter": [
+    "Scroedter"
+  ],
+  "se": [
+    "if",
+    "whether"
+  ],
   "seduta": [
     "session",
     "assembly",
@@ -975,11 +1156,11 @@
     "be seated"
   ],
   "seguito": [
-    "following",
+    "follow",
+    "continue",
+    "proceed",
     "fans",
-    "continuation",
-    "appeal",
-    "string"
+    "continuation"
   ],
   "semplicemente": [
     "just",
@@ -1003,9 +1184,14 @@
     "shift",
     "meeting"
   ],
-  "si": [],
+  "si": [
+    "himself",
+    "herself",
+    "itself"
+  ],
   "siamo": [
-    "we're"
+    "be",
+    "exist"
   ],
   "signora": [
     "lady",
@@ -1028,7 +1214,7 @@
     "position",
     "context"
   ],
-  "sollevarec": [
+  "sollevare": [
     "lift",
     "lift up",
     "hoist",
@@ -1038,7 +1224,7 @@
   "sono": [],
   "sottoporre": [
     "submit",
-    "subject to"
+    "subject"
   ],
   "spagnolo": [
     "Spaniard",
@@ -1049,17 +1235,32 @@
     "trust",
     "chance"
   ],
-  "sri": [],
-  "starà": [],
-  "stata": [],
-  "stato": [
-    "stayed",
-    "state",
-    "government",
-    "condition",
-    "position"
+  "sri": [
+    "Sri"
   ],
-  "su": [],
+  "starà": [
+    "be",
+    "stay",
+    "remain"
+  ],
+  "stata": [
+    "be",
+    "exist"
+  ],
+  "stato": [
+    "be",
+    "exist",
+    "state",
+    "condition",
+    "government"
+  ],
+  "su": [
+    "on the",
+    "above the",
+    "over the",
+    "at the",
+    "about the"
+  ],
   "sua": [
     "her",
     "its",
@@ -1067,10 +1268,16 @@
   ],
   "sue": [
     "her",
-    "his"
+    "his",
+    "her own",
+    "his own"
   ],
   "sui": [
-    "on the"
+    "on the",
+    "above the",
+    "over the",
+    "at the",
+    "about the"
   ],
   "sull'": [
     "on the",
@@ -1088,14 +1295,23 @@
   ],
   "suo": [
     "his",
-    "her"
+    "her",
+    "his own",
+    "her own"
   ],
-  "sì": [],
+  "sì": [
+    "yes"
+  ],
   "tale": [
+    "such",
     "similar",
     "certain"
   ],
-  "tanto": [],
+  "tanto": [
+    "a lot",
+    "much",
+    "such"
+  ],
   "televisione": [
     "television"
   ],
@@ -1105,12 +1321,14 @@
     "topic",
     "essay"
   ],
-  "tempesta": [
+  "tempeste": [
     "storm",
     "tempest",
-    "squall"
+    "squall",
+    "beat",
+    "pound"
   ],
-  "tenere": [
+  "tenesse": [
     "hold",
     "maintain",
     "withhold",
@@ -1133,7 +1351,9 @@
   ],
   "tratta": [
     "segment",
-    "trade"
+    "be about",
+    "debate",
+    "negotiate"
   ],
   "tribunale": [
     "courthouse",
@@ -1144,11 +1364,19 @@
     "however",
     "nevertheless"
   ],
-  "tutto": [
+  "tutte": [
     "everybody",
     "everyone",
     "everything",
-    "all"
+    "all",
+    "entirely"
+  ],
+  "tutti": [
+    "everybody",
+    "everyone",
+    "everything",
+    "all",
+    "entirely"
   ],
   "ultima": [
     "last",
@@ -1174,29 +1402,33 @@
     "cohesion",
     "harmony"
   ],
-  "vacanza": [
+  "vacanze": [
     "vacation",
     "holiday",
     "time off",
-    "light-hearted person"
+    "light-hearted period"
   ],
   "venerdì": [
     "Friday"
   ],
-  "verificare": [
+  "verificatesi": [
+    "happen",
+    "occur",
+    "take place"
+  ],
+  "verificati": [
     "confirm",
     "verify",
     "prove"
   ],
-  "verificatesi": [
-    "confirm",
-    "verify"
+  "verrà": [
+    "come",
+    "arrive"
   ],
-  "verrà": [],
   "vicepresidente": [
-    "vice president"
+    "vice-president"
   ],
-  "violento": [
+  "violente": [
     "aggressive",
     "violent",
     "extreme",
@@ -1205,11 +1437,14 @@
   ],
   "vittime": [
     "victim",
-    "fatatlity"
+    "fatality"
   ],
   "volentieri": [
     "gladly",
-    "certainly"
+    "willingly"
   ],
-  "è": []
+  "è": [
+    "be",
+    "exist"
+  ]
 }

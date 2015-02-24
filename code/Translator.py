@@ -1,6 +1,10 @@
 import json
+import re
 import string
+import sys
 import random
+from termcolor import colored, cprint
+
 
 class PreProcessor:
     def __init__(self):
@@ -24,11 +28,13 @@ class Dictionary:
         
         # Unknown words will remain in Italian
         if word not in self.italian_to_english:
+            cprint("ERROR (word not in dict): {0}".format(word.encode('utf-8')), 'yellow', file=sys.stderr)
             return word
 
         # If the word is in our dictionary but not defined, remain in Italian
         # TODO: remove when the dictionary is completely filled out
         if not self.italian_to_english[word]:
+            cprint("ERROR (word has no definitions): {0}".format(word.encode('utf-8')), 'red', file=sys.stderr)
             return word
 
         # The naive translator simply returns a random definition for a given word
@@ -43,13 +49,21 @@ class Translator:
         self.postprocessor = PostProcessor()
     
     def directTranslate(self, sentence):
+        # Seed RNG to 0 for debugging purposes
         random.seed(0)
-        translation = []
-        tokens = string.split(sentence)
-        # Preprocess
+        # Remove periods, commas
+        sentence = re.sub('[.,]', '', sentence)
+        # Clean hyphens surrounded by spaces
+        sentence = re.sub(' - ', ' ', sentence)
+        # Split up nell'ultima and friends
+        sentence = re.sub("(\w)'(\w)", r"\1' \2", sentence, flags=re.U)
+
+        # Split up our sentence into tokens and preprocess
+        tokens = re.split(r"(?:[ ]+)", sentence.strip())
         words = self.preprocessor.process(tokens)
 
         # Translate
+        translation = []
         for i in range(len(words)):
             translation.append(self.dictionary.translate_word(words, i))
 
