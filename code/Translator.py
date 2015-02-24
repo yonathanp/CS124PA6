@@ -1,10 +1,11 @@
+from __future__ import print_function
 import json
 import os
 import re
 import string
 import sys
 import random
-from termcolor import colored, cprint
+#from termcolor import colored, cprint
 
 
 class PreProcessor:
@@ -32,13 +33,13 @@ class Dictionary:
         
         # Unknown words will remain in Italian
         if word not in self.italian_to_english:
-            cprint("ERROR (word not in dict): {0}".format(word.encode('utf-8')), 'yellow', file=sys.stderr)
+            print("ERROR (word not in dict): {0}".format(word.encode('utf-8')), file=sys.stderr)
             return word
 
         # If the word is in our dictionary but not defined, remain in Italian
         # TODO: remove when the dictionary is completely filled out
         if not self.italian_to_english[word]:
-            cprint("ERROR (word has no definitions): {0}".format(word.encode('utf-8')), 'red', file=sys.stderr)
+            print("ERROR (word has no definitions): {0}".format(word.encode('utf-8')), file=sys.stderr)
             return word
 
         # The naive translator simply returns a random definition for a given word
@@ -90,8 +91,8 @@ class Translator:
 
         # Translate
         translation = []
-        if config['use_unigram']:
-            unigramFrequencies = buildNgramModel(1,config[english_full_proceedings_file],50)
+        if self.config['use_unigram']:
+            unigramFrequencies = self.buildNGramModel(1, self.config['english_full_proceedings_file'], 50)
             for i in range(len(words)):
                 translation.append(self.dictionary.translate_word_unigram(words, i, unigramFrequencies))
         else:
@@ -106,7 +107,7 @@ class Translator:
     def buildNGramModel(self, N, fname, skipLines):
         relevantWords = self.dictionary.getAllEnglishWords()
         Frequencies = {}
-        with open(devSetFile) as f:
+        with open(self.config['dev_sentence_file']) as f:
             lines = f.readlines()
         for i in range(skipLines, len(lines)):
             line = lines[i]
@@ -143,11 +144,11 @@ def main():
         s = s.decode('utf-8')
         t = translator.directTranslate(s)
         if config['pretty_print_output']:
-            cprint("ITALIAN:", 'blue')
+            print("ITALIAN:")
             print(s.encode('utf-8'))
-            cprint("TRANSLATION:", 'blue')
+            print("TRANSLATION:")
             print(t.encode('utf-8'))
-            cprint("GOLD:", 'blue')
+            print("GOLD:")
             print(gold)
         else:
             print(s.encode('utf-8'))
