@@ -93,15 +93,15 @@ def main():
         s = s.decode('utf-8')
         t = translator.directTranslate(s)
         if config['pretty_print_output']:
-          cprint("ITALIAN:", 'blue')
-          print(s.encode('utf-8'))
-          cprint("TRANSLATION:", 'blue')
-          print(t.encode('utf-8'))
-          cprint("GOLD:", 'blue')
-          print(gold)
+            cprint("ITALIAN:", 'blue')
+            print(s.encode('utf-8'))
+            cprint("TRANSLATION:", 'blue')
+            print(t.encode('utf-8'))
+            cprint("GOLD:", 'blue')
+            print(gold)
         else:
-          print(s.encode('utf-8'))
-          print(t.encode('utf-8'))
+            print(s.encode('utf-8'))
+            print(t.encode('utf-8'))
         print("")
         print("")
 
