@@ -1,0 +1,87 @@
+\documentclass{article}
+
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{array}
+\usepackage{natbib}
+\usepackage{cite}
+\usepackage{tipa}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage[justification=centering]{caption}
+\usepackage[bottom]{footmisc}
+\usepackage{titling}
+\usepackage{subfig}
+\usepackage{float}
+
+\newcommand{\subtitle}[1]{%
+	\postauthor{%
+	\end{tabular}\par\end{center}
+\begin{center}\large#1\end{center}
+\vskip0.5em}%
+}
+\preauthor{\begin{center}
+		\large%
+		\begin{tabular}[t]{c}}
+
+\begin{document}
+
+\title{\textbf{PA6: Direct MT from Italian to English}}
+\subtitle{CS124: From Languages to Information}
+\author{Aleksander G\l\'{o}wka, Yonathan Perez, Reid Watson}
+\maketitle
+
+\section{Introduction}
+
+In this report we describe our implementation of a direct MT from Italian to English.
+	 
+\section{Working corpus and results}
+
+\section{Translation system}
+
+\section{Post-processing strategies}
+
+\subsection{Word frequencies}
+
+\subsubsection{CELEX frequencies}
+
+An apparent flaw with our baseline translation was that it chose a word at random from the set of possible translations for each Italian word. All else being equal, a frequent word is more probable to occur than an infrequent word. To capture this generalization, we used the CELEX database to retrieve lemma frequencies for each of our possible English translations and, for any given Italian word, we chose the most frequent English word as its translation. For phrases, we averaged across the frequencies of individual word constituents.\\
+
+Examples
+
+\subsubsection{Europarl unigram model}
+
+To select more contextually appropriate word frequencies, reflecting the kind of language that is used in parliamentary settings, we built a unigram model on the basis of the English parallel text from the Europarl corpus, excluding the first 50 lines from which we sampled the sentences for our development and test set. \\
+
+Examples
+  
+\subsection{POS reordering}
+
+Using handwritten rules operating on POS tags, we placed adjectives before nouns and adverbs before verbs. We also placed indirect object proclitic pronouns after verbs.
+
+\subsection{Inflectional morphology}
+
+For each POS category, we analyzed the final character of the word to select appropriate inflectional morphology in the English translation. For example, if an Italian noun ended in \textit{-o} or \textit{-a}, the English translation appeared as a singular noun; if the Italian noun ended in \textit{-i} or \textit{-e}, we assigned a plural inflectional ending to the corresponding English noun. If it ended in a specific character we determined it was a plural noun and added the inflection using the Nodebox Linguistics Library in Python. \\
+
+Special rules for suppletive verbs. \\
+
+Special rules for inflectional morphology specific to verb classes.
+
+\subsection{POS filtering}
+
+Before we selected the English translation, we filtered the set of possible translations, selecting only those that the same POS tag as the Italian word.
+ 
+\subsection{Deletion of articles}
+
+We created handwritten rules for deleting articles before nouns starting with a capital letter.
+ 
+\subsection{Improved language model}
+
+To choose translation that were sensitive to the local phrasal context, we build a bigram language model on the basis of the sections of the Europarl corpus that were not used for our dev and test set. After word $e_1$ was chosen as a translation of French $f_1$, the next word chosen was the translation candidate $e_2$ for $f_2$ with the highest probability of following $e_1$. We also included a strong form of back-off: if the most probable candidate for $e_2$ was not more than twice as likely than the next most probable, the best translation was selected by Europarl unigram frequency instead.
+
+\section{Comparison with Google Translate}
+
+\section{Error Analysis}
+
+\end{document}
