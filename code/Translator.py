@@ -112,7 +112,8 @@ class Translator:
         Frequencies = {}
         with open(fname) as f:
             lines = f.readlines()
-        for i in range(skipLines, len(lines)):
+        boundry = min(len(lines),self.config['full_proceedings_lines_to_process'])
+        for i in range(skipLines, boundry):
             line = lines[i].decode('utf-8')
             tokens = string.split(line)
             lcase = [token.lower() for token in tokens]
