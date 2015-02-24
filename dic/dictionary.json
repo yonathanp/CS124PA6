@@ -41,7 +41,8 @@
     "abc", 
     "alphabet"
   ], 
-  "access": [
+  "accesso": [
+    "access", 
     "entry", 
     "admission"
   ], 
@@ -212,7 +213,8 @@
     "contain", 
     "own"
   ], 
-  "benefit": [
+  "beneficiato": [
+    "benefit", 
     "take advantage"
   ], 
   "buone": [
@@ -285,7 +287,9 @@
     "compete", 
     "be the responsibility of"
   ], 
-  "condolence": [], 
+  "condoglianze": [
+    "condolence"
+  ], 
   "corso": [
     "course", 
     "flow", 
@@ -340,6 +344,14 @@
     "date", 
     "time", 
     "period"
+  ], 
+  "dato": [
+    "hand over", 
+    "offer", 
+    "hand out", 
+    "assign", 
+    "allocate", 
+    "give"
   ], 
   "de": [
     "de"
@@ -636,7 +648,8 @@
     "interest", 
     "involve"
   ], 
-  "interrogation": [
+  "interrogazioni": [
+    "interrogation", 
     "oral exam", 
     "oral test", 
     "point of order"
@@ -663,12 +676,6 @@
   "io": [
     "I", 
     "me"
-  ], 
-  "just": [
-    "only", 
-    "simply", 
-    "merely", 
-    "easily"
   ], 
   "l'": [
     "the", 
@@ -1142,12 +1149,26 @@
     "if", 
     "whether"
   ], 
+  "seduta": [
+    "session", 
+    "assembly", 
+    "meeting", 
+    "sit", 
+    "be seated"
+  ], 
   "seguito": [
     "follow", 
     "continue", 
     "proceed", 
     "fans", 
     "continuation"
+  ], 
+  "semplicemente": [
+    "just", 
+    "only", 
+    "simply", 
+    "merely", 
+    "easily"
   ], 
   "sentito": [
     "hear", 
@@ -1158,12 +1179,6 @@
   "servizi": [
     "service", 
     "toilet"
-  ], 
-  "session": [
-    "assembly", 
-    "meeting", 
-    "sit", 
-    "be seated"
   ], 
   "sessione": [
     "session", 
@@ -1200,7 +1215,7 @@
     "position", 
     "context"
   ], 
-  "sollevarec": [
+  "sollevare": [
     "lift", 
     "lift up", 
     "hoist", 
@@ -1435,13 +1450,5 @@
   "è": [
     "be", 
     "exist"
-  ], 
-  "﻿dato": [
-    "hand over", 
-    "offer", 
-    "hand out", 
-    "assign", 
-    "allocate", 
-    "give"
   ]
 }
