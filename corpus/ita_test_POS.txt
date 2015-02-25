@@ -1,4 +1,4 @@
-﻿Come	NOM	<unknown>
+Come	NOM	<unknown>
 avrà	VER:futu	avere
 letto	VER:pper	leggere
 sui	PRE:det	sul

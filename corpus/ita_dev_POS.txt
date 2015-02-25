@@ -1,4 +1,4 @@
-﻿Dichiaro	VER:pres	<unknown>
+Dichiaro	VER:pres	<unknown>
 ripresa	VER:pper	riprendere
 la	DET:def	il
 sessione	NOM	sessione
