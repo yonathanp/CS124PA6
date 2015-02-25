@@ -101,16 +101,16 @@ class Translator:
         if self.config['use_celex']:
             for i in range(len(sentence)):
                 w = self.dictionary.translate_word_celex(sentence, i)
-                translation.append(w)
+                translation.append([w, sentence[i][1]])
         else:
             for i in range(len(sentence)):
                 w = self.dictionary.translate_word_random(sentence, i)
-                translation.append(w)
+                translation.append([w, sentence[i][1]])
 
         # Postprocess
         translation = self.postprocessor.process(translation)
 
-        return ' '.join(translation)
+        return ' '.join(t[0] for t in translation)
         
     def buildNGramModel(self, N, fname, skipLines):
         relevantWords = self.dictionary.getAllEnglishWords()
