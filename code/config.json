@@ -1,9 +1,12 @@
 {
   "dictionary_file": "../dic/dictionary.json",
   "dev_sentence_file": "../corpus/ita_dev.txt",
+   "dev_sentence_pos_file": "../corpus/ita_dev_POS.txt",
   "dev_gold_file": "../corpus/eng_dev.txt",
   "english_full_proceedings_file": "../corpus/europarl-v7.it-en.en",
+  "celex_file": "../corpus/celex.json",
   "full_proceedings_lines_to_process": 100000,
   "pretty_print_output": true,
+  "use_celex": true,
   "use_unigram": true
 }

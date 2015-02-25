@@ -23,10 +23,12 @@ class PostProcessor:
         return sentence
 
 class Dictionary:
-    def __init__(self, dictionary_filename, config):
+    def __init__(self, config):
         self.config = config
-        with open(dictionary_filename) as f:
+        with open(config['dictionary_file']) as f:
             self.italian_to_english = json.load(f)
+        with open(config['celex_file']) as celex:
+            self.celex_frequencies = json.load(celex)
 
     def translate_word_random(self, sentence, word_index):
         word = sentence[word_index][0]
@@ -49,6 +51,9 @@ class Dictionary:
 
         # The naive translator simply returns a random definition for a given word
         return random.choice(self.italian_to_english[word])
+        
+    def translate_word_celex(self, sentence, word_index):
+        return self.translate_word_unigram(sentence, word_index, self.celex_frequencies)
         
     def translate_word_unigram(self, sentence, word_index, unigramFrequencies):
         word = sentence[word_index]
@@ -76,8 +81,8 @@ class Dictionary:
         
 
 class Translator:
-    def __init__(self, dictionaryFname, config):
-        self.dictionary = Dictionary(dictionaryFname, config)
+    def __init__(self, config):
+        self.dictionary = Dictionary(config)
         self.preprocessor = PreProcessor(config)
         self.postprocessor = PostProcessor(config)
         self.config = config
@@ -93,9 +98,9 @@ class Translator:
 
         # Translate
         translation = []
-        if self.config['use_unigram']:
+        if self.config['use_celex']:
             for i in range(len(sentence)):
-                w = self.dictionary.translate_word_unigram(sentence, i, self.unigramFrequencies)
+                w = self.dictionary.translate_word_celex(sentence, i)
                 translation.append(w)
         else:
             for i in range(len(sentence)):
@@ -153,7 +158,7 @@ def main():
         dev_sentences = load_POS_sentences(f)
     with open(config['dev_gold_file']) as f:
         gold_sentences = f.readlines()
-    translator = Translator(config['dictionary_file'], config)
+    translator = Translator(config)
     for (s, gold) in zip(dev_sentences, gold_sentences):
         t = translator.directTranslate(s)
         if config['pretty_print_output']:
