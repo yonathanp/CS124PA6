@@ -56,7 +56,10 @@ class Dictionary:
         return self.translate_word_unigram(sentence, word_index, self.celex_frequencies)
         
     def translate_word_unigram(self, sentence, word_index, unigramFrequencies):
-        word = sentence[word_index]
+        word = sentence[word_index][0]
+        word_type = sentence[word_index][1]
+        if word_type == "PON" or word_type == "SENT":
+            return word
         if word not in self.italian_to_english:
             print("ERROR (word not in dict): {0}".format(word.encode('utf-8')), file=sys.stderr)
             return word
