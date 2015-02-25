@@ -13,7 +13,7 @@ class PreProcessor:
         self.config = config
         pass
     def process(self, sentence):
-        return [x.lower() for x in sentence]
+        return [[x[0].lower(), x[1], x[2]] for x in sentence]
 
 class PostProcessor:
     def __init__(self, config):
@@ -29,7 +29,12 @@ class Dictionary:
             self.italian_to_english = json.load(f)
 
     def translate_word_random(self, sentence, word_index):
-        word = sentence[word_index]
+        word = sentence[word_index][0]
+        word_type = sentence[word_index][1]
+
+        # Punctuation is simply returned as it was
+        if word_type == "PON" or word_type == "SENT":
+            return word
         
         # Unknown words will remain in Italian
         if word not in self.italian_to_english:
@@ -82,25 +87,20 @@ class Translator:
     def directTranslate(self, sentence):
         # Seed RNG to 0 for debugging purposes
         random.seed(0)
-        # Remove periods, commas
-        sentence = re.sub('[.,]', '', sentence)
-        # Clean hyphens surrounded by spaces
-        sentence = re.sub(' - ', ' ', sentence)
-        # Split up nell'ultima and friends
-        sentence = re.sub("(\w)'(\w)", r"\1' \2", sentence, flags=re.U)
 
         # Split up our sentence into tokens and preprocess
-        tokens = re.split(r"(?:[ ]+)", sentence.strip())
-        words = self.preprocessor.process(tokens)
+        sentence = self.preprocessor.process(sentence)
 
         # Translate
         translation = []
         if self.config['use_unigram']:
-            for i in range(len(words)):
-                translation.append(self.dictionary.translate_word_unigram(words, i, self.unigramFrequencies))
+            for i in range(len(sentence)):
+                w = self.dictionary.translate_word_unigram(sentence, i, self.unigramFrequencies)
+                translation.append(w)
         else:
-            for i in range(len(words)):
-                translation.append(self.dictionary.translate_word_random(words, i))
+            for i in range(len(sentence)):
+                w = self.dictionary.translate_word_random(sentence, i)
+                translation.append(w)
 
         # Postprocess
         translation = self.postprocessor.process(translation)
@@ -132,24 +132,33 @@ class Translator:
                         Frequencies[key] = 1
         return Frequencies
 
+def load_POS_sentences(f):
+    sentences = []
+    current_sentence = []
+    for line in f:
+        word, word_type, base = line.strip().split("\t")
+        current_sentence.append([word.decode('utf-8'), word_type, base])
+        if word == '.' and word_type == 'SENT':
+            sentences.append(current_sentence)
+            current_sentence = []
+    return sentences
 
 def main():
     # Ensure our working directory is correct
     os.chdir(sys.path[0])
     CONFIG_FILE = 'config.json'
     with open(CONFIG_FILE) as f:
-      config = json.load(f)
-    with open(config['dev_sentence_file']) as f:
-        dev_sentences = f.readlines()
+        config = json.load(f)
+    with open(config['dev_sentence_pos_file']) as f:
+        dev_sentences = load_POS_sentences(f)
     with open(config['dev_gold_file']) as f:
         gold_sentences = f.readlines()
     translator = Translator(config['dictionary_file'], config)
     for (s, gold) in zip(dev_sentences, gold_sentences):
-        s = s.decode('utf-8')
         t = translator.directTranslate(s)
         if config['pretty_print_output']:
             print("ITALIAN:")
-            print(s.encode('utf-8'))
+            print(' '.join([x[0] for x in s]))
             print("TRANSLATION:")
             print(t.encode('utf-8'))
             print("GOLD:")
