@@ -1,0 +1,23 @@
+Strategies:
+
+1. Most frequent translation - lemma based (Celex) - DONE
+
+2. Morphology - lemmas to words / tokens (using regular expressions and 'pattern library')
+    Number (singular / plural)
+    Person (he / we / ..)
+    Tense
+    Aspect
+    Method: grammer rules (hand written) OLEK --> regular expressions to catch occurrences REID --> 
+    input to package 'pattern' --> correct word
+    
+3. Pro-Adding:
+   Method: grammer rules --> regular expressions OLEK --> adding correct pronoun
+   
+4. Unigram based translation - DONE
+
+5. POS-based translation filtering - YONATHAN
+
+6. POS-based word reordering
+Method: grammer rules (english) --> regular expressions and reordering
+
+Further strategies
