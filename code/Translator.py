@@ -1,5 +1,6 @@
 from __future__ import print_function
 from pattern import en
+from pattern import it
 import json
 import os
 import re
@@ -22,13 +23,27 @@ class PostProcessor:
     def __init__(self, config):
         self.config = config
         pass
+    def pluralize_if_needed(self, tok):
+        # We only know how to pluralize nouns and adjectives
+        if tok['pos'] != "NOM" and tok['pos'] != "ADJ":
+            return
+
+        # Don't try and pluralize words with no known base words
+        if tok['ita_base'] == "<unknown>":
+            return
+
+        # If pluralizing the Italian word alters it, then it was probably singular
+        if it.pluralize(tok['ita']) != tok['ita']:
+            return
+        print(tok['en'])
+
+        tok['en'] = en.pluralize(tok['en'])
+
+
     def process(self, sentence):
-        #for i in range(len(en_sentence)):
-        #    print(en_sentence[i][0])
-        #    print(en_sentence[i][1])
-        #    print("")
-        #    if en_sentence[i][1] == "NOM":
-        #        en_sentence[i][0] = en.pluralize(en_sentence[i][0])
+        for tok in sentence:
+            if self.config['use_pluralization']:
+                self.pluralize_if_needed(tok)
         return sentence
 
 class Dictionary:

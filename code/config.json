@@ -8,5 +8,6 @@
   "full_proceedings_lines_to_process": 100000,
   "pretty_print_output": true,
   "use_celex": true,
-  "use_unigram": true
+  "use_unigram": true,
+  "use_pluralization": true
 }
