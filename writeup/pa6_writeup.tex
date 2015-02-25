@@ -50,11 +50,6 @@ An apparent flaw with our baseline translation was that it chose a word at rando
 
 Examples
 
-\subsubsection{Europarl unigram model}
-
-To select more contextually appropriate word frequencies, reflecting the kind of language that is used in parliamentary settings, we built a unigram model on the basis of the English parallel text from the Europarl corpus, excluding the first 50 lines from which we sampled the sentences for our development and test set. \\
-
-Examples
   
 \subsection{POS reordering}
 
@@ -75,6 +70,10 @@ Before we selected the English translation, we filtered the set of possible tran
 \subsection{Deletion of articles}
 
 We created handwritten rules for deleting articles before nouns starting with a capital letter.
+
+\subsection{Europarl unigram model}
+
+To select more contextually appropriate word frequencies, reflecting the kind of language that is used in parliamentary settings, we built a unigram model on the basis of the English parallel text from the Europarl corpus, excluding the first 50 lines from which we sampled the sentences for our development and test set. \\
  
 \subsection{Improved language model}
 
