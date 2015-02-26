@@ -108,9 +108,16 @@ class PostProcessor:
         #print(tok)
         return
  
-    def add_overt_pronoun(self, tok):
+    def add_overt_pronoun(self, sentence, i):
+        tok = sentence[i]
+        prev = None
+        if i != 0:
+            prev = sentence[i - 1]
         if tok['pos'] != 'VER:cpre' and tok['pos'] != 'VER:pres':
             return
+        if i != 0 and (prev['pos'] == 'NOM' or prev['pos'].startswith("PRO")):
+            return
+ 
         if it.conjugate(tok['ita'], it.PRESENT, 1, it.PL) == tok['ita']:
             tok['en'] = "we " + tok['en']
         elif it.conjugate(tok['ita'], it.PRESENT, 2, it.PL) == tok['ita']:
@@ -210,6 +217,7 @@ class PostProcessor:
 
     def process(self, sentence):
         # Single word operations
+        i = 0
         for tok in sentence:
             if self.config['use_pluralization']:
                 self.pluralize_if_needed(tok)
@@ -220,7 +228,8 @@ class PostProcessor:
                 self.conjugate_gerunds(tok)
                 self.conjugate_infinitives(tok)
             if self.config['use_overt_pronouns']:
-                self.add_overt_pronoun(tok)
+                self.add_overt_pronoun(sentence, i)
+            i += 1
 
         # Reordering operations
         i = 0

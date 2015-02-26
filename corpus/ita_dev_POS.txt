@@ -11,7 +11,7 @@ venerdì	NOM	venerdì
 17	NUM	@card@
 dicembre	NOM	dicembre
 e	CON	e
-rinnovo	NOM	rinnovo
+rinnovo	VER:pres	rinnovo
 a	PRE	a
 tutti	PRO:indef	tutto
 i	DET:def	il
