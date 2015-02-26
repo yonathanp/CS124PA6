@@ -11,6 +11,7 @@
   "pretty_print_output": true,
   "use_celex": true,
   "use_unigram": true,
+  "use_bigram": true,
   "use_pluralization": true,
   "use_verb_conjugation": true,
   "use_adjective_reordering": true,

@@ -181,13 +181,9 @@ class PostProcessor:
 
         # More advanced "the his" deletion
         if tok['pos'] == 'PRO:poss' and prev['en'].endswith(' the'):
-            #print(sentence[i - 1])
             sentence[i - 1]['en'] = sentence[i - 1]['en'][0:-4]
-            #print(sentence[i - 1])
-            #print(sentence[i])
-
-
-
+            
+            
     def remove_reflexive_junk(self, sentence, i):
         tok = sentence[i]
         if tok['pos'] == "PRO:refl":
@@ -308,29 +304,27 @@ class Dictionary:
         relevant_translations_set = set(relevant_translations)
         if relevant_translations_set:
             self.italian_to_english[word] = list(relevant_translations_set)
-
-    def translate_word_random(self, sentence, word_index):
-        word = sentence[word_index]['ita']
-        word_type = sentence[word_index]['pos']
-
+            
+    def translate_word_sanity_check(self, word, word_type):
         # Punctuation is simply returned as it was
         if word_type == "PON" or word_type == "SENT":
-            sentence[word_index]['en'] = word
-            return
-        
+            return False
         # Unknown words will remain in Italian
         if word not in self.italian_to_english:
             print("ERROR (word not in dict): {0}".format(word.encode('utf-8')), file=sys.stderr)
-            sentence[word_index]['en'] = word
-            return
-
+            return False
         # If the word is in our dictionary but not defined, remain in Italian
-        # TODO: remove when the dictionary is completely filled out
         if not self.italian_to_english[word]:
             print("ERROR (word has no definitions): {0}".format(word.encode('utf-8')), file=sys.stderr)
+            return False
+        return True
+        
+    def translate_word_random(self, sentence, word_index):
+        word = sentence[word_index]['ita']
+        word_type = sentence[word_index]['pos']
+        if not self.translate_word_snaity_check(word, word_type):
             sentence[word_index]['en'] = word
             return
-
         # The naive translator simply returns a random definition for a given word
         sentence[word_index]['en'] = random.choice(self.italian_to_english[word])
         
@@ -340,15 +334,7 @@ class Dictionary:
     def translate_word_unigram(self, sentence, word_index, unigramFrequencies):
         word = sentence[word_index]['ita']
         word_type = sentence[word_index]['pos']
-        if word_type == "PON" or word_type == "SENT":
-            sentence[word_index]['en'] = word
-            return
-        if word not in self.italian_to_english:
-            print("ERROR (word not in dict): {0}".format(word.encode('utf-8')), file=sys.stderr)
-            sentence[word_index]['en'] = word
-            return
-        if not self.italian_to_english[word]:
-            print("ERROR (word has no definitions): {0}".format(word.encode('utf-8')), file=sys.stderr)
+        if not self.translate_word_sanity_check(word, word_type):
             sentence[word_index]['en'] = word
             return
         maxFreq = 0.0
@@ -359,6 +345,29 @@ class Dictionary:
                 maxFreq = unigramFrequencies[w]
                 bestTranslation = w
                 randomTrans = False
+        sentence[word_index]['en'] = bestTranslation
+        return randomTrans
+        
+    def translate_word_bigram(self, sentence, word_index, bigramFrequencies, unigramFrequencies):
+        word = sentence[word_index]['ita']
+        word_type = sentence[word_index]['pos']
+        if not self.translate_word_sanity_check(word, word_type):
+            sentence[word_index]['en'] = word
+            return
+        maxFreq = 0.0
+        bestTranslation = random.choice(self.italian_to_english[word])
+        randomTrans = True
+        if word_index > 0:
+            prev_word = sentence[word_index-1]['ita']
+            prev_word_type = sentence[word_index-1]['pos']
+            if self.translate_word_sanity_check(prev_word, prev_word_type):
+                for x in self.italian_to_english[prev_word]:
+                    for y in self.italian_to_english[word]:
+                        key = ' '.join([x,y])
+                        if key in bigramFrequencies and bigramFrequencies[key] > maxFreq:
+                            maxFreq = (1.00 * bigramFrequencies[key]) / unigramFrequencies[x]
+                            bestTranslation = y
+                            randomTrans = False
         sentence[word_index]['en'] = bestTranslation
         return randomTrans
         
@@ -379,6 +388,8 @@ class Translator:
         self.config = config
         if(config['use_unigram']):
             self.unigramFrequencies = self.buildNGramModel(1, self.config['english_full_proceedings_file'],50)
+        if(config['use_bigram']):
+            self.bigramFrequencies = self.buildNGramModel(2, self.config['english_full_proceedings_file'],50)
     
     def directTranslate(self, sentence):
         # Seed RNG to 0 for debugging purposes
@@ -392,7 +403,15 @@ class Translator:
             for i in range(len(sentence)):
                 self.dictionary.pos_translation_filter(sentence, i)
                 
-        if self.config['use_unigram']:
+        
+        if self.config['use_bigram']:
+            for i in range(len(sentence)):
+                randomTrans = self.dictionary.translate_word_bigram(sentence, i, self.bigramFrequencies, self.unigramFrequencies)
+                if randomTrans and self.config['use_unigram']:
+                    randomTrans = self.dictionary.translate_word_unigram(sentence, i, self.unigramFrequencies)
+                    if randomTrans and self.config['use_celex']:
+                        self.dictionary.translate_word_celex(sentence, i)
+        elif self.config['use_unigram']:
             for i in range(len(sentence)):
                 randomTrans = self.dictionary.translate_word_unigram(sentence, i, self.unigramFrequencies)
                 if randomTrans and self.config['use_celex']:
