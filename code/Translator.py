@@ -25,7 +25,7 @@ class PostProcessor:
         pass
     def pluralize_if_needed(self, tok):
         # We only know how to pluralize nouns and adjectives
-        if tok['pos'] != "NOM" and tok['pos'] != "ADJ":
+        if tok['pos'] != "NOM":
             return
 
         # Don't try and pluralize words with no known base words
@@ -35,7 +35,10 @@ class PostProcessor:
         # If pluralizing the Italian word alters it, then it was probably singular
         if it.pluralize(tok['ita']) != tok['ita']:
             return
-        print(tok['en'])
+        
+        # If singularizing the Italian word doesn't change it, it was singular
+        if it.singularize(tok['ita']) == tok['ita']:
+            return
 
         tok['en'] = en.pluralize(tok['en'])
 
@@ -190,16 +193,27 @@ def main():
     with open(config['dev_gold_file']) as f:
         gold_sentences = f.readlines()
     translator = Translator(config)
+    i = 1
+    target = None
+    if len(sys.argv) != 1:
+        target = int(sys.argv[1])
     for (s, gold) in zip(dev_sentences, gold_sentences):
+        if target != None and i != target:
+            i += 1
+            continue
         t = translator.directTranslate(s)
+        for x in s:
+            print(x)
+        print("SENTENCE {0}".format(i))
         print("ITALIAN:")
-        print(' '.join([x['ita'] for x in s]))
+        print(' '.join([x['ita'].encode('utf-8') for x in s]))
         print("TRANSLATION:")
-        print(' '.join([x['en'] for x in s]))
+        print(' '.join([x['en'].encode('utf-8') for x in s]))
         print("GOLD:")
         print(gold)
         print("")
         print("")
+        i += 1
 
 
 if __name__ == '__main__':
