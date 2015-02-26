@@ -42,11 +42,157 @@ class PostProcessor:
 
         tok['en'] = en.pluralize(tok['en'])
 
+    def conjugate_infinitives(self, sentence, i):
+        tok = sentence[i]
+        original = tok['en']
+        if tok['pos'] != 'VER:infi':
+            return
+        if it.conjugate(tok['ita_base']) != tok['ita']:
+            return
+
+        if i != 0:
+            prev = sentence[i - 1]
+            if prev['pos'] == 'PRE':
+                del sentence[i - 1]
+
+        tok['en'] = "to " + tok['en']
+        return
+
+    def conjugate_gerunds(self, tok):
+        if tok['pos'] != 'VER:geru':
+            return
+        original = tok['en']
+        tok['en'] = en.conjugate(tok['en'], aspect=en.PROGRESSIVE) 
+
+        #print("CHANGE MADE, original then new")
+        #print(original)
+        #print(tok)
+    def conjugate_future_english_verbs(self, tok):
+        if tok['pos'] != 'VER:futu':
+            return
+        original = tok['en']
+        tok['en'] = 'will ' + tok['en']
+
+        #print("CHANGE MADE, original then new")
+        #print(original)
+        #print(tok)
+        return
+ 
+    def conjugate_past_english_verbs(self, tok):
+        if tok['pos'] != 'VER:pper':
+            return
+        original = tok['en']
+        # XXX: BUG IN pattern!!! You must pass in en.PROGRESSIVE instead of
+        # en.PERFECTIVE due to a bug in pattern.en
+        tok['en'] = en.conjugate(tok['en'], en.PAST, aspect=en.PROGRESSIVE)
+
+        #print("CHANGE MADE, original then new")
+        #print(original)
+        #print(tok)
+        return
+ 
+    def conjugate_english_verbs(self, tok):
+        original = tok['en']
+        if tok['pos'] != 'VER:cpre' and tok['pos'] != 'VER:pres':
+            return
+        if it.conjugate(tok['ita'], it.PRESENT, 1, it.PL) == tok['ita']:
+            tok['en'] = en.conjugate(tok['en'], en.PRESENT, 1, en.PL)
+        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.PL) == tok['ita']:
+            tok['en'] = en.conjugate(tok['en'], en.PRESENT, 2, en.PL)
+        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.PL) == tok['ita']:
+            tok['en'] = en.conjugate(tok['en'], en.PRESENT, 3, en.PL)
+        elif it.conjugate(tok['ita'], it.PRESENT, 1, it.SG) == tok['ita']:
+            tok['en'] = en.conjugate(tok['en'], en.PRESENT, 1, en.SG)
+        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.SG) == tok['ita']:
+            tok['en'] = en.conjugate(tok['en'], en.PRESENT, 2, en.SG)
+        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.SG) == tok['ita']:
+            tok['en'] = en.conjugate(tok['en'], en.PRESENT, 3, en.SG)
+        else:
+            return
+
+        #print("CHANGE MADE, original then new")
+        #print(original)
+        #print(tok)
+        return
+ 
+    def add_overt_pronoun(self, tok):
+        if tok['pos'] != 'VER:cpre' and tok['pos'] != 'VER:pres':
+            return
+        if it.conjugate(tok['ita'], it.PRESENT, 1, it.PL) == tok['ita']:
+            tok['en'] = "we " + tok['en']
+        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.PL) == tok['ita']:
+            tok['en'] = "you " + tok['en']
+        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.PL) == tok['ita']:
+            tok['en'] = "they " + tok['en']
+        elif it.conjugate(tok['ita'], it.PRESENT, 1, it.SG) == tok['ita']:
+            tok['en'] = "I " + tok['en']
+        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.SG) == tok['ita']:
+            tok['en'] = "you " + tok['en']
+        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.SG) == tok['ita']:
+            tok['en'] = "it " + tok['en']
+        else:
+            return
+
+        print("CHANGE MADE")
+        print(tok)
+        return
+
+    def reorder_adjectives(self, sentence, i):
+        if i == len(sentence) - 1:
+            return
+        tok = sentence[i]
+        # Reordering only works on nouns
+        if tok['pos'] != 'NOM':
+            return
+
+        move_to = i + 1
+        while move_to < len(sentence):
+            # If we find an adjective then we know where we want to move this to
+            if sentence[move_to]['pos'] == 'ADJ':
+                break
+            # If there's a non-adverb between this noun and the next adjective then don't reorder
+            if sentence[move_to]['pos'] != 'ADV':
+                return
+
+            move_to += 1
+
+        if move_to == len(sentence):
+            return
+        for j in range(i, move_to):
+            sentence[j] = sentence[j + 1]
+        sentence[move_to] = tok
+        #print("SWITCHING:")
+        #for i in range(i, move_to + 1):
+        #    print(sentence[i])
+    def reorder_adverbs(self, sentence, i):
+        if i == len(sentence) - 1:
+            return
+        tok = sentence[i]
+        after = sentence[i + 1]
+        if tok['pos'].startswith("VER:") and after['pos'] == 'ADV':
+            sentence[i], sentence[i + 1] = sentence[i + 1], sentence[i]
+            print("SWITCHING:")
+            print(tok)
+            print(after)
+
 
     def process(self, sentence):
+        i = 0
         for tok in sentence:
             if self.config['use_pluralization']:
                 self.pluralize_if_needed(tok)
+            if self.config['use_verb_conjugation']:
+                self.conjugate_past_english_verbs(tok)
+                self.conjugate_english_verbs(tok)
+                self.conjugate_future_english_verbs(tok)
+                self.conjugate_gerunds(tok)
+                self.conjugate_infinitives(sentence, i)
+            #self.add_overt_pronoun(tok)
+            if self.config['use_adjective_reordering']:
+                self.reorder_adjectives(sentence, i)
+            self.reorder_adverbs(sentence, i)
+            i += 1
+
         return sentence
 
 class Dictionary:
@@ -202,8 +348,6 @@ def main():
             i += 1
             continue
         t = translator.directTranslate(s)
-        for x in s:
-            print(x)
         print("SENTENCE {0}".format(i))
         print("ITALIAN:")
         print(' '.join([x['ita'].encode('utf-8') for x in s]))
@@ -211,6 +355,11 @@ def main():
         print(' '.join([x['en'].encode('utf-8') for x in s]))
         print("GOLD:")
         print(gold)
+        if target != None:
+            for x in s:
+                print(x)
+        #for x in s:
+        #    print(x)
         print("")
         print("")
         i += 1
