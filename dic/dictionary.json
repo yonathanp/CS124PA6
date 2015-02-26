@@ -250,8 +250,7 @@
   "cioè": [
     "that is", 
     "namely", 
-    "actually", 
-    "rather"
+    "actually"
   ], 
   "colleghi": [
     "colleague", 
@@ -297,9 +296,7 @@
     "run"
   ], 
   "costituzione": [
-    "constitution", 
-    "founding", 
-    "establishment"
+    "constitution"
   ], 
   "criminali": [
     "criminal", 
@@ -368,12 +365,7 @@
     "from the"
   ], 
   "dell'": [
-    "of", 
-    "from", 
-    "than", 
-    "on", 
-    "above", 
-    "out of"
+    "of the"
   ], 
   "della": [
     "of the", 
@@ -510,8 +502,7 @@
     "present"
   ], 
   "esprimere": [
-    "expres", 
-    "say", 
+    "express", 
     "state", 
     "convey"
   ], 
@@ -644,6 +635,7 @@
     "involve"
   ], 
   "interrogazioni": [
+    "question",
     "interrogation", 
     "oral exam", 
     "oral test", 
@@ -669,8 +661,7 @@
     "encourage"
   ], 
   "io": [
-    "I", 
-    "me"
+    "I"
   ], 
   "l'": [
     "the", 
@@ -751,7 +742,6 @@
   "minuto": [
     "tiny", 
     "minor", 
-    "fine", 
     "delicate", 
     "minute"
   ], 
@@ -991,7 +981,7 @@
   ], 
   "questa": [
     "this", 
-    "such", 
+    "such a",
     "this one"
   ], 
   "questione": [
@@ -1190,11 +1180,7 @@
     "wife"
   ], 
   "silenzio": [
-    "silence", 
-    "stillness", 
-    "calm", 
-    "oblivion", 
-    "peace"
+    "silence"
   ], 
   "situazione": [
     "situation", 

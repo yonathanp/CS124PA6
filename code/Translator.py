@@ -113,28 +113,37 @@ class PostProcessor:
         prev = None
         if i != 0:
             prev = sentence[i - 1]
-        if tok['pos'] != 'VER:cpre' and tok['pos'] != 'VER:pres':
+        if not tok['pos'].startswith('VER:'):
             return
         if i != 0 and (prev['pos'] == 'NOM' or prev['pos'].startswith("PRO")):
             return
- 
-        if it.conjugate(tok['ita'], it.PRESENT, 1, it.PL) == tok['ita']:
-            tok['en'] = "we " + tok['en']
-        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.PL) == tok['ita']:
-            tok['en'] = "you " + tok['en']
-        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.PL) == tok['ita']:
-            tok['en'] = "they " + tok['en']
-        elif it.conjugate(tok['ita'], it.PRESENT, 1, it.SG) == tok['ita']:
-            tok['en'] = "I " + tok['en']
-        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.SG) == tok['ita']:
-            tok['en'] = "you " + tok['en']
-        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.SG) == tok['ita']:
-            tok['en'] = "it " + tok['en']
+        
+        # Returns true if no subst made
+        def handle_one(tense):
+            if it.conjugate(tok['ita'], tense, 1, it.PL) == tok['ita']:
+                tok['en'] = "we " + tok['en']
+            elif it.conjugate(tok['ita'], tense, 2, it.PL) == tok['ita']:
+                tok['en'] = "you " + tok['en']
+            elif it.conjugate(tok['ita'], tense, 3, it.PL) == tok['ita']:
+                tok['en'] = "they " + tok['en']
+            elif it.conjugate(tok['ita'], tense, 1, it.SG) == tok['ita']:
+                tok['en'] = "I " + tok['en']
+            elif it.conjugate(tok['ita'], tense, 2, it.SG) == tok['ita']:
+                tok['en'] = "you " + tok['en']
+            elif it.conjugate(tok['ita'], tense, 3, it.SG) == tok['ita']:
+                tok['en'] = "it " + tok['en']
+            else:
+                return True
+        changed = False
+        if tok['pos'] == 'VER:futu':
+            changed = not handle_one(it.FUTURE)
+        elif tok['pos'] =='VER:pper':
+            changed = not handle_one(it.PAST)
         else:
-            return
-
-        #print("CHANGE MADE")
-        #print(tok)
+            changed = not handle_one(it.PRESENT)
+        if changed:
+            print("CHANGE MADE")
+            print(tok)
         return
 
     def reorder_adjectives(self, sentence, i):
