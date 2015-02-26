@@ -256,8 +256,40 @@ class Dictionary:
         self.config = config
         with open(config['dictionary_file']) as f:
             self.italian_to_english = json.load(f)
+        english_words = set()
+        for itw in self.italian_to_english:
+            for enw in self.italian_to_english[itw]:
+                english_words.add(enw)
         with open(config['celex_file']) as celex:
             self.celex_frequencies = json.load(celex)
+        if config['use_pos_filtering_for_translation']:
+            with open(config['pos_dictionary_file']) as f:
+                dictionary_pos = json.load(f) 
+            self.english_dictionary_pos = {}
+            for w in english_words:
+                if w in dictionary_pos:
+                    self.english_dictionary_pos[w] = dictionary_pos[w]
+            with open(config['pos_mapping_file']) as f:
+                # a mapping between english POS tags and a regular expression that represents 
+                self.pos_mapping = json.load(f)
+                
+    def pos_translation_filter(self, sentence, word_index):
+        word_type = sentence[word_index]['pos']
+        word = sentence[word_index]['ita']
+        if word_type == "PON" or word_type == "SENT":
+            return
+        relevant_translations = []
+        for w in self.italian_to_english[word]:
+            if w not in self.english_dictionary_pos:
+               relevant_translations.append(w)
+            else:  
+                for edp in self.english_dictionary_pos[w]:
+                    m = re.match(self.pos_mapping[edp], word_type)
+                    if m != None:
+                        relevant_translations.append(w)
+        relevant_translations_set = set(relevant_translations)
+        if relevant_translations_set:
+            self.italian_to_english[word] = list(relevant_translations_set)
 
     def translate_word_random(self, sentence, word_index):
         word = sentence[word_index]['ita']
@@ -335,6 +367,10 @@ class Translator:
         sentence = self.preprocessor.process(sentence)
 
         # Translate
+        if self.config['use_pos_filtering_for_translation']:
+            for i in range(len(sentence)):
+                self.dictionary.pos_translation_filter(sentence, i)
+                
         if self.config['use_celex']:
             for i in range(len(sentence)):
                 self.dictionary.translate_word_celex(sentence, i)

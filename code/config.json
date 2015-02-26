@@ -1,5 +1,7 @@
 {
   "dictionary_file": "../dic/dictionary.json",
+  "pos_dictionary_file": "../dic/pos_dictionary.json",
+  "pos_mapping_file": "../dic/pos_mapping.json",
   "dev_sentence_file": "../corpus/ita_dev.txt",
   "dev_sentence_pos_file": "../corpus/ita_dev_POS.txt",
   "dev_gold_file": "../corpus/eng_dev.txt",
@@ -14,5 +16,6 @@
   "use_adjective_reordering": true,
   "remove_useless_material": true,
   "use_overt_pronouns": true,
-  "use_a_an_correction": true
+  "use_a_an_correction": true,
+  "use_pos_filtering_for_translation": true
 }

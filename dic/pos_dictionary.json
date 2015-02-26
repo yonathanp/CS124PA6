@@ -1,0 +1,4218 @@
+{
+  "'": [
+    "POS"
+  ], 
+  "17": [
+    "CD"
+  ], 
+  "18": [
+    "CD"
+  ], 
+  "Alexander": [
+    "NP"
+  ], 
+  "December": [
+    "NP", 
+    "NN"
+  ], 
+  "DÃ­ez": [
+    "NP"
+  ], 
+  "European": [
+    "JJ", 
+    "NP", 
+    "NN"
+  ], 
+  "Friday": [
+    "NP", 
+    "NN"
+  ], 
+  "GonzÃ¡lez": [
+    "NP"
+  ], 
+  "I": [
+    "NN", 
+    "PP", 
+    "NP"
+  ], 
+  "Lanka": [
+    "NP"
+  ], 
+  "Mrs.": [
+    "NP"
+  ], 
+  "Nikitin": [
+    "NP", 
+    "NN", 
+    "JJ"
+  ], 
+  "November": [
+    "NP", 
+    "NN"
+  ], 
+  "Palacio": [
+    "NP"
+  ], 
+  "Russia": [
+    "NP"
+  ], 
+  "Scroedter": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS", 
+    "RB", 
+    "VVP"
+  ], 
+  "Spaniard": [
+    "NN"
+  ], 
+  "Spanish": [
+    "JJ", 
+    "NP", 
+    "NN"
+  ], 
+  "Sri": [
+    "NP"
+  ], 
+  "Thursday": [
+    "NP", 
+    "NN"
+  ], 
+  "a": [
+    "DT", 
+    "NN"
+  ], 
+  "abbattute": [
+    "NNS", 
+    "NN", 
+    "JJ", 
+    "RB", 
+    "VVG"
+  ], 
+  "abbia": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "abbiamo": [
+    "NP", 
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "RB", 
+    "VVZ"
+  ], 
+  "abbiate": [
+    "JJ", 
+    "NN", 
+    "VVP", 
+    "VV", 
+    "NNS"
+  ], 
+  "abc": [
+    "NN", 
+    "JJ", 
+    "NP"
+  ], 
+  "abide": [
+    "VV", 
+    "VVP"
+  ], 
+  "able": [
+    "JJ"
+  ], 
+  "about": [
+    "IN", 
+    "RB"
+  ], 
+  "above": [
+    "IN", 
+    "RB", 
+    "JJ"
+  ], 
+  "absolve": [
+    "VV", 
+    "VVP"
+  ], 
+  "access": [
+    "NN", 
+    "VV"
+  ], 
+  "accesso": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS", 
+    "VVN", 
+    "VVG"
+  ], 
+  "accusa": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG", 
+    "RB"
+  ], 
+  "accusare": [
+    "NNS", 
+    "NP", 
+    "NN", 
+    "RB", 
+    "JJ"
+  ], 
+  "accusation": [
+    "NN"
+  ], 
+  "accuse": [
+    "VVP", 
+    "VV"
+  ], 
+  "acquit": [
+    "VV", 
+    "VVP"
+  ], 
+  "act": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "actually": [
+    "RB"
+  ], 
+  "address": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "admission": [
+    "NN"
+  ], 
+  "advantage": [
+    "NN", 
+    "VV"
+  ], 
+  "advertise": [
+    "VV", 
+    "VVP"
+  ], 
+  "affair": [
+    "NN"
+  ], 
+  "affection": [
+    "NN"
+  ], 
+  "affidavit": [
+    "NN"
+  ], 
+  "again": [
+    "RB"
+  ], 
+  "aggressive": [
+    "JJ"
+  ], 
+  "ai": [
+    "VVZ", 
+    "VVP", 
+    "NN"
+  ], 
+  "aim": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "al": [
+    "NP"
+  ], 
+  "alcune": [
+    "NP", 
+    "NN", 
+    "VV", 
+    "VVP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "alcuni": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "VVG", 
+    "RB"
+  ], 
+  "alexander": [
+    "NN", 
+    "NP", 
+    "JJ"
+  ], 
+  "all": [
+    "DT", 
+    "PDT", 
+    "RB"
+  ], 
+  "alla": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG"
+  ], 
+  "allocate": [
+    "VVP", 
+    "VV"
+  ], 
+  "alphabet": [
+    "NN"
+  ], 
+  "already": [
+    "RB"
+  ], 
+  "also": [
+    "RB"
+  ], 
+  "although": [
+    "IN"
+  ], 
+  "altre": [
+    "NN", 
+    "JJ", 
+    "VVP", 
+    "NNS", 
+    "VV", 
+    "NP"
+  ], 
+  "altresÃ¬": [
+    "JJ", 
+    "NN", 
+    "NP", 
+    "NNS"
+  ], 
+  "ambient": [
+    "JJ"
+  ], 
+  "ambiente": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "RB", 
+    "NP", 
+    "VVG"
+  ], 
+  "an": [
+    "DT"
+  ], 
+  "analyze": [
+    "VV", 
+    "VVP"
+  ], 
+  "anche": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ"
+  ], 
+  "ancora": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "VVG", 
+    "JJ"
+  ], 
+  "and": [
+    "CC"
+  ], 
+  "anniversary": [
+    "NN", 
+    "JJ"
+  ], 
+  "anno": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS"
+  ], 
+  "announce": [
+    "VV", 
+    "VVP"
+  ], 
+  "answer": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "any": [
+    "DT", 
+    "RB"
+  ], 
+  "apertura": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "NP", 
+    "RB"
+  ], 
+  "appeal": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "appello": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "RB"
+  ], 
+  "appena": [
+    "NN", 
+    "NNS", 
+    "VVZ", 
+    "VVG", 
+    "RB", 
+    "NP"
+  ], 
+  "application": [
+    "NN"
+  ], 
+  "appropriate": [
+    "JJ"
+  ], 
+  "approva": [
+    "NP", 
+    "NNS", 
+    "NN", 
+    "RB"
+  ], 
+  "approve": [
+    "VVP", 
+    "VV"
+  ], 
+  "appunto": [
+    "NN", 
+    "NNS", 
+    "RB", 
+    "JJ", 
+    "NP", 
+    "VVG"
+  ], 
+  "argument": [
+    "NN"
+  ], 
+  "arrangement": [
+    "NN"
+  ], 
+  "arrive": [
+    "VVP", 
+    "VV"
+  ], 
+  "as": [
+    "IN", 
+    "RB"
+  ], 
+  "ask": [
+    "VVP", 
+    "VV"
+  ], 
+  "assai": [
+    "RB", 
+    "NN"
+  ], 
+  "assassinii": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "RB", 
+    "VVN"
+  ], 
+  "assembly": [
+    "NN"
+  ], 
+  "assign": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "assimilate": [
+    "VV", 
+    "VVP"
+  ], 
+  "association": [
+    "NN"
+  ], 
+  "assolto": [
+    "NN", 
+    "NP", 
+    "RB", 
+    "NNS", 
+    "JJ", 
+    "VVG"
+  ], 
+  "at": [
+    "IN"
+  ], 
+  "attendance": [
+    "NN"
+  ], 
+  "atti": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "JJ", 
+    "RB", 
+    "VVG"
+  ], 
+  "attribute": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "audience": [
+    "NN"
+  ], 
+  "auguri": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "aver": [
+    "VV", 
+    "VVP"
+  ], 
+  "avessero": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ", 
+    "VVG", 
+    "RB"
+  ], 
+  "avete": [
+    "JJ", 
+    "NN", 
+    "NP", 
+    "NNS", 
+    "VV", 
+    "VVP"
+  ], 
+  "avevamo": [
+    "NN", 
+    "NNS", 
+    "NP"
+  ], 
+  "avrÃ ": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "avrÃ²": [
+    "NN", 
+    "NNS", 
+    "NP"
+  ], 
+  "aware": [
+    "JJ"
+  ], 
+  "back": [
+    "RB", 
+    "JJ", 
+    "NN"
+  ], 
+  "backlash": [
+    "NN"
+  ], 
+  "barely": [
+    "RB"
+  ], 
+  "be": [
+    "VB"
+  ], 
+  "beat": [
+    "NN", 
+    "VVD", 
+    "VV", 
+    "VVP"
+  ], 
+  "because": [
+    "RB", 
+    "IN"
+  ], 
+  "becuase": [
+    "NN", 
+    "VV", 
+    "JJ", 
+    "NNS", 
+    "NP"
+  ], 
+  "bed": [
+    "NN", 
+    "VV"
+  ], 
+  "before": [
+    "IN", 
+    "RB"
+  ], 
+  "believe": [
+    "VV", 
+    "VVP"
+  ], 
+  "beneficiato": [
+    "NN", 
+    "JJ", 
+    "RB", 
+    "NNS", 
+    "NP", 
+    "VVG"
+  ], 
+  "benefit": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "best": [
+    "JJS", 
+    "RBS"
+  ], 
+  "boarding": [
+    "VVG", 
+    "NN"
+  ], 
+  "break": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "brute": [
+    "JJ", 
+    "NN"
+  ], 
+  "build": [
+    "VV", 
+    "VVP", 
+    "VVN"
+  ], 
+  "buone": [
+    "JJ", 
+    "NN", 
+    "NP", 
+    "NNS", 
+    "VVN", 
+    "VV"
+  ], 
+  "burst": [
+    "NN", 
+    "VVD", 
+    "VVP", 
+    "VVN", 
+    "VV"
+  ], 
+  "but": [
+    "CC", 
+    "RB"
+  ], 
+  "by": [
+    "IN"
+  ], 
+  "call": [
+    "NN", 
+    "JJ", 
+    "VVP", 
+    "VV"
+  ], 
+  "calm": [
+    "JJ", 
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "can": [
+    "MD", 
+    "NN"
+  ], 
+  "case": [
+    "NN"
+  ], 
+  "caso": [
+    "NP", 
+    "NN", 
+    "JJ", 
+    "NNS"
+  ], 
+  "certain": [
+    "JJ"
+  ], 
+  "certainly": [
+    "RB"
+  ], 
+  "chance": [
+    "NN", 
+    "VVP"
+  ], 
+  "change": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "character": [
+    "NN"
+  ], 
+  "charge": [
+    "NN"
+  ], 
+  "che": [
+    "NNS", 
+    "NN", 
+    "VVG", 
+    "JJ", 
+    "RB", 
+    "VVZ", 
+    "VVP", 
+    "VVD", 
+    "VVN", 
+    "VV"
+  ], 
+  "chiesto": [
+    "NN", 
+    "NNS", 
+    "RB", 
+    "NP", 
+    "JJ"
+  ], 
+  "cioÃ¨": [
+    "NN", 
+    "NNS"
+  ], 
+  "circulation": [
+    "NN"
+  ], 
+  "circumstance": [
+    "NN"
+  ], 
+  "claim": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "class": [
+    "NN"
+  ], 
+  "clerk": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "close": [
+    "JJ", 
+    "NN", 
+    "RB", 
+    "VV"
+  ], 
+  "co-worker": [
+    "NN"
+  ], 
+  "cohesion": [
+    "NN"
+  ], 
+  "coincidence": [
+    "NN"
+  ], 
+  "colleague": [
+    "NN"
+  ], 
+  "college": [
+    "NN"
+  ], 
+  "colleghi": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "RB", 
+    "VVN"
+  ], 
+  "collegio": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "RB", 
+    "VVG"
+  ], 
+  "come": [
+    "VVP", 
+    "VVN", 
+    "VV"
+  ], 
+  "commesso": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS"
+  ], 
+  "commissario": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "commissioner": [
+    "NN"
+  ], 
+  "commit": [
+    "VVP", 
+    "VV"
+  ], 
+  "communication": [
+    "NN"
+  ], 
+  "community": [
+    "NN"
+  ], 
+  "compete": [
+    "VV", 
+    "VVP"
+  ], 
+  "competenti": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "VVN"
+  ], 
+  "complicated": [
+    "JJ", 
+    "VVN"
+  ], 
+  "concern": [
+    "NN"
+  ], 
+  "concerning": [
+    "VVG", 
+    "JJ", 
+    "IN"
+  ], 
+  "condition": [
+    "NN"
+  ], 
+  "condoglianze": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "condolence": [
+    "NN"
+  ], 
+  "confirm": [
+    "VVP", 
+    "VV"
+  ], 
+  "connect": [
+    "VVP", 
+    "VV"
+  ], 
+  "connected": [
+    "JJ", 
+    "VVN"
+  ], 
+  "connection": [
+    "NN"
+  ], 
+  "consideration": [
+    "NN"
+  ], 
+  "constituency": [
+    "NN"
+  ], 
+  "constitution": [
+    "NN"
+  ], 
+  "contain": [
+    "VV", 
+    "VVP"
+  ], 
+  "content": [
+    "NN", 
+    "JJ"
+  ], 
+  "context": [
+    "NN"
+  ], 
+  "continuation": [
+    "NN"
+  ], 
+  "continue": [
+    "VV", 
+    "VVP"
+  ], 
+  "convey": [
+    "VV", 
+    "VVP"
+  ], 
+  "convinced": [
+    "VVN", 
+    "JJ"
+  ], 
+  "core": [
+    "NN", 
+    "JJ"
+  ], 
+  "corso": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "costituzione": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS", 
+    "RB"
+  ], 
+  "country": [
+    "NN"
+  ], 
+  "coupon": [
+    "NN"
+  ], 
+  "course": [
+    "NN"
+  ], 
+  "court": [
+    "NN"
+  ], 
+  "courthouse": [
+    "NN"
+  ], 
+  "coworker": [
+    "NN"
+  ], 
+  "craving": [
+    "NN", 
+    "VVG"
+  ], 
+  "credit": [
+    "NN", 
+    "VV"
+  ], 
+  "crime": [
+    "NN"
+  ], 
+  "criminal": [
+    "JJ", 
+    "NN"
+  ], 
+  "criminali": [
+    "NNS", 
+    "NN", 
+    "JJ", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB"
+  ], 
+  "cui": [
+    "NNS", 
+    "NN", 
+    "NP"
+  ], 
+  "cuore": [
+    "NN", 
+    "JJ", 
+    "VVD", 
+    "RB", 
+    "NNS", 
+    "NP"
+  ], 
+  "current": [
+    "JJ", 
+    "NN"
+  ], 
+  "da": [
+    "NN", 
+    "NP", 
+    "NNS"
+  ], 
+  "dal": [
+    "NN"
+  ], 
+  "dalla": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "VVG"
+  ], 
+  "data": [
+    "NNS", 
+    "NN"
+  ], 
+  "date": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "day": [
+    "NN"
+  ], 
+  "daytime": [
+    "JJ", 
+    "NN"
+  ], 
+  "de": [
+    "FW", 
+    "NP"
+  ], 
+  "dead": [
+    "JJ", 
+    "NN", 
+    "RB"
+  ], 
+  "death": [
+    "NN"
+  ], 
+  "debate": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "declaration": [
+    "NN"
+  ], 
+  "declare": [
+    "VV", 
+    "VVP"
+  ], 
+  "deep": [
+    "JJ", 
+    "NN", 
+    "RB"
+  ], 
+  "del": [
+    "FW", 
+    "NP", 
+    "DT"
+  ], 
+  "delicate": [
+    "JJ", 
+    "NN"
+  ], 
+  "delinquent": [
+    "JJ", 
+    "NN"
+  ], 
+  "dell": [
+    "NN"
+  ], 
+  "della": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "VVG"
+  ], 
+  "delle": [
+    "NP"
+  ], 
+  "demand": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "demolish": [
+    "VVP", 
+    "VV"
+  ], 
+  "department": [
+    "NN"
+  ], 
+  "desidera": [
+    "NNS", 
+    "NN", 
+    "NP"
+  ], 
+  "desiderio": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG", 
+    "RB", 
+    "VVZ"
+  ], 
+  "desire": [
+    "NN", 
+    "VVP"
+  ], 
+  "determinate": [
+    "JJ"
+  ], 
+  "determinato": [
+    "NN", 
+    "RB", 
+    "NNS", 
+    "NP", 
+    "VVG"
+  ], 
+  "determine": [
+    "VVP", 
+    "VV"
+  ], 
+  "determined": [
+    "VVN", 
+    "JJ", 
+    "VVD"
+  ], 
+  "di": [
+    "FW", 
+    "NP"
+  ], 
+  "diary": [
+    "NN"
+  ], 
+  "dicembre": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "RB", 
+    "VVP", 
+    "VV"
+  ], 
+  "dichiarazioni": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "VVN", 
+    "RB"
+  ], 
+  "dichiaro": [
+    "VVZ", 
+    "RB", 
+    "NP", 
+    "NNS", 
+    "NN", 
+    "VVG"
+  ], 
+  "different": [
+    "JJ"
+  ], 
+  "difficile": [
+    "JJ", 
+    "NN", 
+    "RB", 
+    "NNS", 
+    "NP", 
+    "VV"
+  ], 
+  "difficult": [
+    "JJ"
+  ], 
+  "direct": [
+    "JJ", 
+    "RB", 
+    "VV", 
+    "VVP"
+  ], 
+  "directive": [
+    "NN", 
+    "JJ"
+  ], 
+  "directly": [
+    "RB", 
+    "IN"
+  ], 
+  "diretti": [
+    "NP", 
+    "NN", 
+    "JJ", 
+    "RB", 
+    "NNS"
+  ], 
+  "diritto": [
+    "NP", 
+    "NN", 
+    "RB", 
+    "JJ", 
+    "NNS"
+  ], 
+  "discussion": [
+    "NN"
+  ], 
+  "discussione": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ", 
+    "VVG", 
+    "VVZ"
+  ], 
+  "dispatch": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "display": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "disposal": [
+    "NN"
+  ], 
+  "disposition": [
+    "NN"
+  ], 
+  "disposizioni": [
+    "NP", 
+    "NN", 
+    "NNS", 
+    "JJ"
+  ], 
+  "disseminate": [
+    "VV", 
+    "VVP"
+  ], 
+  "diverse": [
+    "JJ"
+  ], 
+  "diversi": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "RB", 
+    "VVN"
+  ], 
+  "do": [
+    "VVP", 
+    "VV"
+  ], 
+  "dot": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "down": [
+    "RB", 
+    "RP", 
+    "IN", 
+    "JJ", 
+    "NN"
+  ], 
+  "draw": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "dÃ­ez": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ"
+  ], 
+  "e": [
+    "NN", 
+    "NP"
+  ], 
+  "easily": [
+    "RB"
+  ], 
+  "ed": [
+    "NN", 
+    "VVN"
+  ], 
+  "electoral": [
+    "JJ"
+  ], 
+  "encourage": [
+    "VV", 
+    "VVP"
+  ], 
+  "end": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "enjoy": [
+    "VVP", 
+    "VV"
+  ], 
+  "ensemble": [
+    "NN", 
+    "RB"
+  ], 
+  "entirely": [
+    "RB"
+  ], 
+  "entirety": [
+    "NN"
+  ], 
+  "entry": [
+    "NN"
+  ], 
+  "environment": [
+    "NN"
+  ], 
+  "error": [
+    "NN"
+  ], 
+  "errore": [
+    "NN", 
+    "JJ", 
+    "VVD", 
+    "RB", 
+    "NNS", 
+    "NP"
+  ], 
+  "eruption": [
+    "NN"
+  ], 
+  "esaminerÃ²": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "NP"
+  ], 
+  "esplosioni": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG", 
+    "VVN", 
+    "RB", 
+    "VVZ"
+  ], 
+  "esposta": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "esprimere": [
+    "NN", 
+    "JJ", 
+    "NP"
+  ], 
+  "essay": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "essence": [
+    "NN"
+  ], 
+  "establish": [
+    "VV", 
+    "VVP"
+  ], 
+  "establishment": [
+    "NN"
+  ], 
+  "esteem": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "europea": [
+    "NNS", 
+    "NN", 
+    "JJ", 
+    "NP"
+  ], 
+  "europeo": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "RB", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "VVN"
+  ], 
+  "even": [
+    "RB", 
+    "JJ", 
+    "VV"
+  ], 
+  "event": [
+    "NN"
+  ], 
+  "everybody": [
+    "NN"
+  ], 
+  "everyone": [
+    "NN"
+  ], 
+  "everything": [
+    "NN"
+  ], 
+  "exactly": [
+    "RB"
+  ], 
+  "exam": [
+    "NN"
+  ], 
+  "examine": [
+    "VVP", 
+    "VV"
+  ], 
+  "excuse": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "exhibit": [
+    "NN", 
+    "VV"
+  ], 
+  "exhort": [
+    "VV", 
+    "VVP"
+  ], 
+  "exist": [
+    "VV", 
+    "VVP"
+  ], 
+  "expert": [
+    "NN", 
+    "JJ"
+  ], 
+  "explain": [
+    "VV", 
+    "VVP"
+  ], 
+  "explosion": [
+    "NN"
+  ], 
+  "explosive": [
+    "JJ", 
+    "NN"
+  ], 
+  "expres": [
+    "NNS"
+  ], 
+  "extreme": [
+    "JJ", 
+    "NN"
+  ], 
+  "extremely": [
+    "RB"
+  ], 
+  "fact": [
+    "NN"
+  ], 
+  "fans": [
+    "NNS"
+  ], 
+  "fare": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "farthest": [
+    "JJ", 
+    "RB"
+  ], 
+  "fatality": [
+    "NN"
+  ], 
+  "fate": [
+    "NN"
+  ], 
+  "fatti": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "RB", 
+    "VVN"
+  ], 
+  "fatto": [
+    "NN", 
+    "JJ", 
+    "RB", 
+    "NP", 
+    "NNS", 
+    "VVG"
+  ], 
+  "fault": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "feel": [
+    "VVP", 
+    "NN", 
+    "VV"
+  ], 
+  "felony": [
+    "NN"
+  ], 
+  "final": [
+    "JJ", 
+    "NN"
+  ], 
+  "fine": [
+    "JJ", 
+    "NN", 
+    "RB"
+  ], 
+  "fit": [
+    "JJ", 
+    "NN", 
+    "VVP", 
+    "VVN"
+  ], 
+  "fix": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "flow": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "focus": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "follow": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "for": [
+    "IN"
+  ], 
+  "forth": [
+    "RB", 
+    "IN"
+  ], 
+  "fortitude": [
+    "NN"
+  ], 
+  "forward": [
+    "RB", 
+    "JJ", 
+    "NN", 
+    "VV"
+  ], 
+  "founding": [
+    "NN", 
+    "VVG", 
+    "JJ"
+  ], 
+  "framework": [
+    "NN"
+  ], 
+  "frattempo": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "RB", 
+    "NNS", 
+    "VVG", 
+    "VVN"
+  ], 
+  "from": [
+    "IN"
+  ], 
+  "further": [
+    "RBR", 
+    "JJR", 
+    "VV"
+  ], 
+  "gap": [
+    "NN"
+  ], 
+  "giornale": [
+    "JJ", 
+    "NN", 
+    "NP", 
+    "VVP", 
+    "NNS"
+  ], 
+  "giornali": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "NP", 
+    "VVG", 
+    "RB", 
+    "VVN"
+  ], 
+  "giorni": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "RB", 
+    "VVN"
+  ], 
+  "giorno": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS", 
+    "RB"
+  ], 
+  "giovedÃ¬": [
+    "JJ", 
+    "NP", 
+    "NN"
+  ], 
+  "giudiziario": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "RB"
+  ], 
+  "giungere": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVP"
+  ], 
+  "give": [
+    "VV", 
+    "VVP"
+  ], 
+  "giÃ ": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS"
+  ], 
+  "gladly": [
+    "RB"
+  ], 
+  "go": [
+    "VVP", 
+    "VV", 
+    "NN", 
+    "JJ"
+  ], 
+  "goal": [
+    "NN"
+  ], 
+  "god": [
+    "NN"
+  ], 
+  "gonzÃ¡lez": [
+    "NP", 
+    "NN", 
+    "JJ", 
+    "NNS"
+  ], 
+  "good": [
+    "JJ", 
+    "RB", 
+    "NN"
+  ], 
+  "government": [
+    "NN"
+  ], 
+  "grave": [
+    "JJ", 
+    "NN", 
+    "RB"
+  ], 
+  "gravity": [
+    "NN"
+  ], 
+  "hack": [
+    "JJ", 
+    "NN", 
+    "VV"
+  ], 
+  "hammer": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "hand": [
+    "NN", 
+    "RB", 
+    "VV"
+  ], 
+  "hanno": [
+    "NN", 
+    "NNS", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVN"
+  ], 
+  "happen": [
+    "VVP", 
+    "VV", 
+    "RB"
+  ], 
+  "happy": [
+    "JJ"
+  ], 
+  "hard": [
+    "JJ", 
+    "RB"
+  ], 
+  "harmony": [
+    "NN"
+  ], 
+  "have": [
+    "VHP", 
+    "VH"
+  ], 
+  "hear": [
+    "VVP", 
+    "VV"
+  ], 
+  "heart": [
+    "NN", 
+    "RB", 
+    "VVP"
+  ], 
+  "heavy": [
+    "JJ", 
+    "NN"
+  ], 
+  "her": [
+    "PP", 
+    "PP"
+  ], 
+  "herself": [
+    "PP"
+  ], 
+  "him": [
+    "PP"
+  ], 
+  "himself": [
+    "PP"
+  ], 
+  "his": [
+    "PP"
+  ], 
+  "ho": [
+    "NN", 
+    "NNS", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVN"
+  ], 
+  "hoist": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "hold": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "holiday": [
+    "NN"
+  ], 
+  "honorable": [
+    "JJ"
+  ], 
+  "hope": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "hour": [
+    "NN"
+  ], 
+  "how": [
+    "WRB"
+  ], 
+  "however": [
+    "RB"
+  ], 
+  "i": [
+    "NP", 
+    "FW", 
+    "NNS", 
+    "NN"
+  ], 
+  "if": [
+    "IN"
+  ], 
+  "il": [
+    "NNS", 
+    "NN", 
+    "VVG", 
+    "JJ", 
+    "RB", 
+    "VVZ", 
+    "VVP", 
+    "VVN"
+  ], 
+  "illegal": [
+    "JJ"
+  ], 
+  "improve": [
+    "VVP", 
+    "VV"
+  ], 
+  "in": [
+    "IN", 
+    "RB"
+  ], 
+  "inauguration": [
+    "NN"
+  ], 
+  "include": [
+    "VV", 
+    "VVP"
+  ], 
+  "indeed": [
+    "RB"
+  ], 
+  "information": [
+    "NN"
+  ], 
+  "informazioni": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "VVN"
+  ], 
+  "innumerable": [
+    "JJ"
+  ], 
+  "innumerevoli": [
+    "NNS", 
+    "NN", 
+    "JJ", 
+    "NP", 
+    "RB", 
+    "VVG", 
+    "VVZ"
+  ], 
+  "inserite": [
+    "NN", 
+    "JJ", 
+    "NNS"
+  ], 
+  "insert": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "inspect": [
+    "VV", 
+    "VVP"
+  ], 
+  "instruction": [
+    "NN"
+  ], 
+  "integrate": [
+    "VV", 
+    "VVP"
+  ], 
+  "intendo": [
+    "NN", 
+    "RB", 
+    "NNS", 
+    "JJ", 
+    "NP"
+  ], 
+  "interessati": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS", 
+    "RB", 
+    "VVN"
+  ], 
+  "interest": [
+    "NN"
+  ], 
+  "interim": [
+    "JJ", 
+    "NN"
+  ], 
+  "interpret": [
+    "VV", 
+    "VVP"
+  ], 
+  "interrogation": [
+    "NN"
+  ], 
+  "interrogazioni": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "interrotta": [
+    "NP", 
+    "NNS", 
+    "NN"
+  ], 
+  "interrupt": [
+    "VV", 
+    "VVP"
+  ], 
+  "intervention": [
+    "NN"
+  ], 
+  "intervento": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "RB", 
+    "NNS", 
+    "VVG"
+  ], 
+  "into": [
+    "IN"
+  ], 
+  "introduce": [
+    "VV", 
+    "VVP"
+  ], 
+  "inviasse": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "invitarla": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "invite": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "involve": [
+    "VVP", 
+    "VV"
+  ], 
+  "io": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "VVZ", 
+    "VVG", 
+    "JJ", 
+    "RB"
+  ], 
+  "is": [
+    "VBZ"
+  ], 
+  "its": [
+    "PP"
+  ], 
+  "itself": [
+    "PP"
+  ], 
+  "join": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "journal": [
+    "NN"
+  ], 
+  "judicial": [
+    "JJ"
+  ], 
+  "judiciary": [
+    "NN", 
+    "JJ"
+  ], 
+  "just": [
+    "RB"
+  ], 
+  "keep": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "kill": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "know": [
+    "VV", 
+    "VVP"
+  ], 
+  "l": [
+    "NN"
+  ], 
+  "la": [
+    "FW", 
+    "NP", 
+    "NN"
+  ], 
+  "lady": [
+    "NN"
+  ], 
+  "land": [
+    "NN", 
+    "VV"
+  ], 
+  "lanka": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ"
+  ], 
+  "last": [
+    "JJ", 
+    "RB", 
+    "VV", 
+    "NN"
+  ], 
+  "latest": [
+    "JJ", 
+    "JJS", 
+    "RB"
+  ], 
+  "layout": [
+    "NN"
+  ], 
+  "le": [
+    "FW", 
+    "DT"
+  ], 
+  "lei": [
+    "NNS"
+  ], 
+  "letter": [
+    "NN"
+  ], 
+  "lettera": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "letto": [
+    "NN", 
+    "RB", 
+    "NNS", 
+    "JJ", 
+    "NP"
+  ], 
+  "lieti": [
+    "NNS", 
+    "NN", 
+    "JJ"
+  ], 
+  "lift": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "light-hearted": [
+    "JJ"
+  ], 
+  "like": [
+    "IN", 
+    "VVP", 
+    "JJ"
+  ], 
+  "literature": [
+    "NN"
+  ], 
+  "lo": [
+    "NN", 
+    "NP", 
+    "VVG", 
+    "VVZ", 
+    "NNS", 
+    "JJ", 
+    "RB"
+  ], 
+  "longing": [
+    "NN", 
+    "VVG", 
+    "JJ"
+  ], 
+  "look": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "lot": [
+    "NN", 
+    "RB"
+  ], 
+  "lust": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "madam": [
+    "NN"
+  ], 
+  "maintain": [
+    "VV", 
+    "VVP"
+  ], 
+  "make": [
+    "VV", 
+    "VVP", 
+    "NN"
+  ], 
+  "manner": [
+    "NN"
+  ], 
+  "many": [
+    "JJ", 
+    "RB", 
+    "DT"
+  ], 
+  "matter": [
+    "NN", 
+    "VV", 
+    "JJR", 
+    "VVP"
+  ], 
+  "me": [
+    "PP", 
+    "FW"
+  ], 
+  "mean": [
+    "JJ", 
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "meantime": [
+    "NN", 
+    "RB"
+  ], 
+  "measure": [
+    "NN", 
+    "VV"
+  ], 
+  "meeting": [
+    "NN", 
+    "VVG"
+  ], 
+  "memoria": [
+    "NN", 
+    "NNS", 
+    "NP"
+  ], 
+  "memory": [
+    "NN"
+  ], 
+  "merely": [
+    "RB"
+  ], 
+  "merit": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "merito": [
+    "NP", 
+    "NN", 
+    "JJ", 
+    "RB", 
+    "NNS"
+  ], 
+  "messenger": [
+    "NN"
+  ], 
+  "messo": [
+    "NN", 
+    "NNS", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVD", 
+    "VVN"
+  ], 
+  "mi": [
+    "NN"
+  ], 
+  "mia": [
+    "NP"
+  ], 
+  "miei": [
+    "NN", 
+    "NP", 
+    "VVG", 
+    "RB", 
+    "JJ", 
+    "NNS", 
+    "VVN"
+  ], 
+  "migliori": [
+    "NNS", 
+    "NP", 
+    "NN", 
+    "RB", 
+    "VVG", 
+    "VVZ", 
+    "JJ", 
+    "VVN"
+  ], 
+  "mine": [
+    "NN", 
+    "JJ"
+  ], 
+  "ministero": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS", 
+    "RB"
+  ], 
+  "ministry": [
+    "NN"
+  ], 
+  "minor": [
+    "JJ", 
+    "NN"
+  ], 
+  "minute": [
+    "NN", 
+    "JJ"
+  ], 
+  "minuto": [
+    "NN", 
+    "RB", 
+    "JJ", 
+    "NNS", 
+    "VVG", 
+    "NP"
+  ], 
+  "mio": [
+    "NP"
+  ], 
+  "misdemeanor": [
+    "NN"
+  ], 
+  "mistake": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "misunderstanding": [
+    "NN", 
+    "VVG"
+  ], 
+  "mode": [
+    "NN"
+  ], 
+  "modo": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "RB", 
+    "NNS"
+  ], 
+  "mole": [
+    "NN"
+  ], 
+  "moment": [
+    "NN"
+  ], 
+  "more": [
+    "RBR", 
+    "JJR"
+  ], 
+  "moreover": [
+    "RB"
+  ], 
+  "morti": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "most": [
+    "JJS", 
+    "RBS"
+  ], 
+  "much": [
+    "JJ", 
+    "RB"
+  ], 
+  "murder": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "my": [
+    "PP"
+  ], 
+  "namely": [
+    "RB"
+  ], 
+  "nation": [
+    "NN"
+  ], 
+  "near": [
+    "IN", 
+    "JJ", 
+    "RB", 
+    "NN"
+  ], 
+  "negotiate": [
+    "VV", 
+    "VVP"
+  ], 
+  "nei": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "JJ"
+  ], 
+  "neighbor": [
+    "NN"
+  ], 
+  "nel": [
+    "NN", 
+    "NNS", 
+    "JJ"
+  ], 
+  "nell": [
+    "NP", 
+    "NNS", 
+    "NN", 
+    "JJ", 
+    "VVG", 
+    "VVN"
+  ], 
+  "nella": [
+    "NN", 
+    "NNS", 
+    "VVG", 
+    "NP", 
+    "JJ"
+  ], 
+  "nevertheless": [
+    "RB"
+  ], 
+  "newspaper": [
+    "NN"
+  ], 
+  "next": [
+    "JJ", 
+    "RB", 
+    "IN"
+  ], 
+  "nikitin": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "noi": [
+    "NNS", 
+    "NN", 
+    "RB", 
+    "NP", 
+    "VVG", 
+    "JJ"
+  ], 
+  "non": [
+    "JJ"
+  ], 
+  "non-stop": [
+    "JJ", 
+    "RB"
+  ], 
+  "nostri": [
+    "NP", 
+    "NN", 
+    "VVZ", 
+    "VVG", 
+    "RB", 
+    "NNS"
+  ], 
+  "not": [
+    "RB"
+  ], 
+  "note": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "notice": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "novembre": [
+    "JJ", 
+    "NP", 
+    "NN", 
+    "RB", 
+    "VVP", 
+    "VV", 
+    "NNS"
+  ], 
+  "now": [
+    "RB"
+  ], 
+  "numerosi": [
+    "NNS", 
+    "NN", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVN"
+  ], 
+  "numerous": [
+    "JJ"
+  ], 
+  "nuovamente": [
+    "NN", 
+    "NNS", 
+    "RB", 
+    "JJ", 
+    "NP", 
+    "VVG"
+  ], 
+  "objective": [
+    "NN", 
+    "JJ"
+  ], 
+  "oblivion": [
+    "NN"
+  ], 
+  "observe": [
+    "VVP", 
+    "VV"
+  ], 
+  "obtain": [
+    "VV", 
+    "VVP"
+  ], 
+  "occasion": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "occasione": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS", 
+    "RB"
+  ], 
+  "occupy": [
+    "VV", 
+    "VVP"
+  ], 
+  "occur": [
+    "VV", 
+    "VVP"
+  ], 
+  "of": [
+    "IN"
+  ], 
+  "off": [
+    "IN", 
+    "RB", 
+    "RP", 
+    "JJ"
+  ], 
+  "offer": [
+    "NN", 
+    "JJR", 
+    "VV", 
+    "VVP"
+  ], 
+  "on": [
+    "IN", 
+    "RB"
+  ], 
+  "one": [
+    "CD", 
+    "PP", 
+    "NN"
+  ], 
+  "only": [
+    "RB", 
+    "JJ"
+  ], 
+  "onorevole": [
+    "JJ", 
+    "NN", 
+    "NP"
+  ], 
+  "opening": [
+    "NN", 
+    "VVG", 
+    "JJ"
+  ], 
+  "openness": [
+    "NN"
+  ], 
+  "opinion": [
+    "NN"
+  ], 
+  "opinioni": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "opportune": [
+    "JJ"
+  ], 
+  "opportunity": [
+    "NN"
+  ], 
+  "opportuno": [
+    "NN", 
+    "NNS", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVN"
+  ], 
+  "ora": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG", 
+    "RB"
+  ], 
+  "oral": [
+    "JJ"
+  ], 
+  "order": [
+    "NN"
+  ], 
+  "ordigni": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "JJ", 
+    "RB", 
+    "VVG", 
+    "VVN"
+  ], 
+  "ordine": [
+    "NN", 
+    "JJ"
+  ], 
+  "osservare": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "NP"
+  ], 
+  "osservi": [
+    "NNS", 
+    "NN", 
+    "JJ", 
+    "RB", 
+    "NP"
+  ], 
+  "other": [
+    "JJ"
+  ], 
+  "ottenuto": [
+    "RB", 
+    "NP", 
+    "NNS", 
+    "NN", 
+    "JJ"
+  ], 
+  "our": [
+    "PP"
+  ], 
+  "out": [
+    "RB", 
+    "IN", 
+    "RP", 
+    "NN", 
+    "JJ"
+  ], 
+  "outbreak": [
+    "NN"
+  ], 
+  "outburst": [
+    "NN"
+  ], 
+  "outcome": [
+    "NN"
+  ], 
+  "over": [
+    "IN", 
+    "RB", 
+    "RP"
+  ], 
+  "oversight": [
+    "NN"
+  ], 
+  "own": [
+    "JJ", 
+    "VVP", 
+    "VV"
+  ], 
+  "pacific": [
+    "JJ"
+  ], 
+  "pacifica": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "RB", 
+    "VVG", 
+    "VVZ"
+  ], 
+  "pacify": [
+    "VVP"
+  ], 
+  "paesi": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "NP"
+  ], 
+  "palacio": [
+    "NP", 
+    "VVZ", 
+    "RB", 
+    "NN", 
+    "VVG"
+  ], 
+  "parlamento": [
+    "NN", 
+    "JJ", 
+    "RB", 
+    "NP", 
+    "NNS", 
+    "VVG"
+  ], 
+  "parliament": [
+    "NN"
+  ], 
+  "participating": [
+    "VVG"
+  ], 
+  "pass": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "past": [
+    "JJ", 
+    "IN", 
+    "NN", 
+    "RB", 
+    "VV"
+  ], 
+  "peace": [
+    "NN"
+  ], 
+  "peaceful": [
+    "JJ"
+  ], 
+  "people": [
+    "NNS"
+  ], 
+  "per": [
+    "IN", 
+    "FW"
+  ], 
+  "perchÃ©": [
+    "NNS", 
+    "NN", 
+    "RB", 
+    "VVZ", 
+    "JJ", 
+    "VVG", 
+    "VVN", 
+    "VVD", 
+    "VV"
+  ], 
+  "period": [
+    "NN"
+  ], 
+  "pertaining": [
+    "VVG"
+  ], 
+  "perÃ²": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "NP"
+  ], 
+  "petition": [
+    "NN"
+  ], 
+  "pickup": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "piÃ¹": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS"
+  ], 
+  "place": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "plea": [
+    "NN", 
+    "VV"
+  ], 
+  "plenaria": [
+    "NNS", 
+    "NN", 
+    "JJ", 
+    "NP"
+  ], 
+  "plenary": [
+    "JJ", 
+    "NN"
+  ], 
+  "plus": [
+    "IN", 
+    "CC"
+  ], 
+  "point": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "pose": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "position": [
+    "NN"
+  ], 
+  "possess": [
+    "VVP", 
+    "VV"
+  ], 
+  "potere": [
+    "NN", 
+    "NNS", 
+    "JJ"
+  ], 
+  "pound": [
+    "NN", 
+    "VV"
+  ], 
+  "power": [
+    "VV", 
+    "NN"
+  ], 
+  "precedence": [
+    "NN"
+  ], 
+  "precedent": [
+    "NN", 
+    "JJ"
+  ], 
+  "precedente": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "NP", 
+    "RB", 
+    "VVG"
+  ], 
+  "precedenza": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG", 
+    "RB"
+  ], 
+  "preceding": [
+    "JJ", 
+    "VVG"
+  ], 
+  "precondition": [
+    "NN", 
+    "VVP"
+  ], 
+  "pregiudiziale": [
+    "NNS", 
+    "JJ", 
+    "RB", 
+    "NN", 
+    "NP"
+  ], 
+  "preliminary": [
+    "JJ", 
+    "NN"
+  ], 
+  "premise": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "present": [
+    "NN", 
+    "VV", 
+    "VVP", 
+    "JJ"
+  ], 
+  "presentato": [
+    "NN", 
+    "RB", 
+    "JJ", 
+    "NNS", 
+    "NP", 
+    "VVG"
+  ], 
+  "presente": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "RB", 
+    "NP", 
+    "VVG"
+  ], 
+  "president": [
+    "NN"
+  ], 
+  "presidente": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "NP", 
+    "VVG", 
+    "RB"
+  ], 
+  "previous": [
+    "JJ"
+  ], 
+  "print": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "priority": [
+    "NN", 
+    "JJ"
+  ], 
+  "proceed": [
+    "VV", 
+    "VVP"
+  ], 
+  "proceeding": [
+    "VVG", 
+    "NN"
+  ], 
+  "proclaim": [
+    "VVP", 
+    "VV"
+  ], 
+  "prosecution": [
+    "NN"
+  ], 
+  "prossimi": [
+    "NNS", 
+    "NN", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB", 
+    "JJ"
+  ], 
+  "prove": [
+    "VV", 
+    "VVP"
+  ], 
+  "pubblicate": [
+    "NNS", 
+    "NN", 
+    "VVZ", 
+    "RB", 
+    "VVG", 
+    "VVD"
+  ], 
+  "pubblico": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ", 
+    "RB", 
+    "VVG", 
+    "VVZ", 
+    "VVN"
+  ], 
+  "public": [
+    "JJ", 
+    "NN"
+  ], 
+  "publicize": [
+    "VV", 
+    "VVP"
+  ], 
+  "publish": [
+    "VV", 
+    "VVP"
+  ], 
+  "punto": [
+    "JJ", 
+    "NN", 
+    "RB", 
+    "NP", 
+    "VVG", 
+    "NNS"
+  ], 
+  "put": [
+    "NN", 
+    "JJ", 
+    "VVN", 
+    "VVP"
+  ], 
+  "quality": [
+    "NN", 
+    "JJ"
+  ], 
+  "quanto": [
+    "RB", 
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS", 
+    "VVG"
+  ], 
+  "quarrel": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "quell": [
+    "VV", 
+    "VVP"
+  ], 
+  "questa": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "VVG"
+  ], 
+  "question": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "questione": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS"
+  ], 
+  "questori": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "VVN"
+  ], 
+  "rank": [
+    "NN", 
+    "JJ", 
+    "VV", 
+    "VVP"
+  ], 
+  "rather": [
+    "RB", 
+    "JJR"
+  ], 
+  "ratify": [
+    "VV", 
+    "VVP"
+  ], 
+  "reach": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "reaction": [
+    "NN"
+  ], 
+  "read": [
+    "VVN", 
+    "VVD", 
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "reaffirm": [
+    "VV", 
+    "VVP"
+  ], 
+  "reason": [
+    "NN"
+  ], 
+  "reati": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "receive": [
+    "VVP", 
+    "VV"
+  ], 
+  "recent": [
+    "JJ"
+  ], 
+  "recollection": [
+    "NN"
+  ], 
+  "reconcile": [
+    "VV", 
+    "VVP"
+  ], 
+  "reconciliation": [
+    "NN"
+  ], 
+  "record": [
+    "NN", 
+    "JJ", 
+    "VV"
+  ], 
+  "recount": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "refined": [
+    "JJ", 
+    "VVN", 
+    "VVD"
+  ], 
+  "regards": [
+    "VVZ", 
+    "NNS"
+  ], 
+  "reiterate": [
+    "VVP", 
+    "VV"
+  ], 
+  "relate": [
+    "VVP", 
+    "VV"
+  ], 
+  "related": [
+    "VVN", 
+    "JJ", 
+    "VVD"
+  ], 
+  "relation": [
+    "NN"
+  ], 
+  "relationship": [
+    "NN"
+  ], 
+  "relative": [
+    "JJ", 
+    "NN"
+  ], 
+  "relativi": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "RB", 
+    "VVN", 
+    "VVZ"
+  ], 
+  "relazione": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ", 
+    "VVG", 
+    "VVZ"
+  ], 
+  "release": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "relieve": [
+    "VV", 
+    "VVP"
+  ], 
+  "remain": [
+    "VV", 
+    "VVP"
+  ], 
+  "remainder": [
+    "NN"
+  ], 
+  "remaining": [
+    "VVG", 
+    "JJ"
+  ], 
+  "rememberance": [
+    "NN", 
+    "JJ", 
+    "NP"
+  ], 
+  "remove": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "renew": [
+    "VV", 
+    "VVP"
+  ], 
+  "renewal": [
+    "NN"
+  ], 
+  "reply": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "report": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "request": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "require": [
+    "VV", 
+    "VVP"
+  ], 
+  "rescrew": [
+    "NN", 
+    "NNS"
+  ], 
+  "research": [
+    "NN"
+  ], 
+  "resolution": [
+    "NN"
+  ], 
+  "resort": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "respect": [
+    "NN", 
+    "VV"
+  ], 
+  "response": [
+    "NN"
+  ], 
+  "responsibility": [
+    "NN"
+  ], 
+  "rest": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "restate": [
+    "VV", 
+    "VVP"
+  ], 
+  "resto": [
+    "NN", 
+    "JJ", 
+    "NP"
+  ], 
+  "restore": [
+    "VV", 
+    "VVP"
+  ], 
+  "restrain": [
+    "VV", 
+    "VVP"
+  ], 
+  "result": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "resume": [
+    "VV", 
+    "VVP", 
+    "NN"
+  ], 
+  "retain": [
+    "VVP", 
+    "VV"
+  ], 
+  "retake": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "return": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "review": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "ribadendo": [
+    "NN", 
+    "RB", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "ricerche": [
+    "NN", 
+    "NP"
+  ], 
+  "ricevuto": [
+    "NN", 
+    "NNS", 
+    "NP"
+  ], 
+  "richiesta": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "riconciliazione": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "NNS", 
+    "RB"
+  ], 
+  "ricorrerÃ ": [
+    "NN", 
+    "JJ", 
+    "NNS"
+  ], 
+  "riferite": [
+    "NN", 
+    "JJ"
+  ], 
+  "right": [
+    "JJ", 
+    "NN", 
+    "RB"
+  ], 
+  "riguardavano": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVZ", 
+    "VVG", 
+    "RB"
+  ], 
+  "rilevare": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS", 
+    "VV"
+  ], 
+  "rinnovo": [
+    "NN", 
+    "JJ", 
+    "NP"
+  ], 
+  "ripresa": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ"
+  ], 
+  "risoluzioni": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "VVN"
+  ], 
+  "risposta": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "risultati": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "ritenuto": [
+    "RB", 
+    "JJ"
+  ], 
+  "roll": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "round": [
+    "NN", 
+    "JJ", 
+    "RB", 
+    "VV", 
+    "VVP"
+  ], 
+  "run": [
+    "NN", 
+    "VVN", 
+    "VVP", 
+    "VV", 
+    "VVD"
+  ], 
+  "russia": [
+    "NP", 
+    "JJ", 
+    "NN", 
+    "NNS"
+  ], 
+  "salesperson": [
+    "NN"
+  ], 
+  "same": [
+    "JJ", 
+    "RB"
+  ], 
+  "sancito": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "RB", 
+    "NNS", 
+    "VVG"
+  ], 
+  "sanction": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "sappiamo": [
+    "NN", 
+    "NP"
+  ], 
+  "sarebbe": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "RB"
+  ], 
+  "savage": [
+    "JJ", 
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "say": [
+    "VVP", 
+    "VV"
+  ], 
+  "scarcely": [
+    "RB"
+  ], 
+  "school": [
+    "NN"
+  ], 
+  "scorso": [
+    "NN", 
+    "NNS", 
+    "VVZ", 
+    "VVG", 
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVD", 
+    "VVN"
+  ], 
+  "scroedter": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS"
+  ], 
+  "scrutinize": [
+    "VV", 
+    "VVP"
+  ], 
+  "se": [
+    "FW"
+  ], 
+  "search": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "seated": [
+    "VVN"
+  ], 
+  "seduta": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "NP"
+  ], 
+  "seek": [
+    "VV", 
+    "VVP"
+  ], 
+  "segment": [
+    "NN"
+  ], 
+  "seguito": [
+    "NN", 
+    "RB", 
+    "JJ", 
+    "NP", 
+    "NNS"
+  ], 
+  "semplicemente": [
+    "NN", 
+    "NNS", 
+    "RB", 
+    "JJ", 
+    "NP"
+  ], 
+  "send": [
+    "VV", 
+    "VVP", 
+    "NN"
+  ], 
+  "sense": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "sentito": [
+    "NN", 
+    "NP", 
+    "RB", 
+    "NNS", 
+    "JJ"
+  ], 
+  "serious": [
+    "JJ"
+  ], 
+  "service": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "servizi": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ", 
+    "VVG", 
+    "VVZ", 
+    "VVN"
+  ], 
+  "session": [
+    "NN"
+  ], 
+  "sessione": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS", 
+    "RB"
+  ], 
+  "set": [
+    "VVN", 
+    "NN", 
+    "VV", 
+    "VVD", 
+    "VVP", 
+    "JJ"
+  ], 
+  "setting": [
+    "VVG", 
+    "NN"
+  ], 
+  "several": [
+    "JJ"
+  ], 
+  "she": [
+    "PP"
+  ], 
+  "shift": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "show": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "si": [
+    "NP"
+  ], 
+  "siamo": [
+    "NN", 
+    "NP", 
+    "RB"
+  ], 
+  "signora": [
+    "NN"
+  ], 
+  "silence": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "silenzio": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG", 
+    "RB"
+  ], 
+  "similar": [
+    "JJ"
+  ], 
+  "simply": [
+    "RB"
+  ], 
+  "since": [
+    "IN", 
+    "RB"
+  ], 
+  "sit": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "situation": [
+    "NN"
+  ], 
+  "situazione": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "VVG", 
+    "NNS"
+  ], 
+  "skim": [
+    "NN", 
+    "VV"
+  ], 
+  "smell": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "so": [
+    "RB", 
+    "IN", 
+    "CC"
+  ], 
+  "sollevare": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "NP"
+  ], 
+  "solution": [
+    "NN"
+  ], 
+  "some": [
+    "DT", 
+    "RB"
+  ], 
+  "sono": [
+    "NN", 
+    "NP", 
+    "RB"
+  ], 
+  "soon": [
+    "RB"
+  ], 
+  "sottoporre": [
+    "NP", 
+    "NNS", 
+    "RB", 
+    "JJ", 
+    "NN", 
+    "VV", 
+    "VVG", 
+    "VVP"
+  ], 
+  "space": [
+    "NN"
+  ], 
+  "spagnolo": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ", 
+    "VVG", 
+    "VVZ"
+  ], 
+  "specialist": [
+    "NN", 
+    "JJ"
+  ], 
+  "speech": [
+    "NN"
+  ], 
+  "spend": [
+    "VV", 
+    "VVP"
+  ], 
+  "speranza": [
+    "NN", 
+    "NNS", 
+    "JJ", 
+    "NP"
+  ], 
+  "squall": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "sri": [
+    "NN"
+  ], 
+  "start": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "starÃ ": [
+    "NN", 
+    "NP"
+  ], 
+  "stata": [
+    "NN", 
+    "NNS", 
+    "NP"
+  ], 
+  "state": [
+    "NN"
+  ], 
+  "statement": [
+    "NN"
+  ], 
+  "stato": [
+    "NN", 
+    "RB", 
+    "NP"
+  ], 
+  "status": [
+    "NN", 
+    "FW"
+  ], 
+  "stay": [
+    "VV", 
+    "NN", 
+    "VVP"
+  ], 
+  "still": [
+    "RB"
+  ], 
+  "stillness": [
+    "NN"
+  ], 
+  "stitch": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "stop": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "storm": [
+    "NN"
+  ], 
+  "straight": [
+    "JJ", 
+    "RB", 
+    "NN"
+  ], 
+  "study": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "su": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ"
+  ], 
+  "sua": [
+    "NN", 
+    "VVG", 
+    "VVZ", 
+    "NNS", 
+    "RB", 
+    "NP", 
+    "JJ"
+  ], 
+  "subject": [
+    "NN", 
+    "JJ"
+  ], 
+  "submit": [
+    "VV", 
+    "VVP"
+  ], 
+  "subtle": [
+    "JJ"
+  ], 
+  "such": [
+    "JJ", 
+    "PDT"
+  ], 
+  "sue": [
+    "VV", 
+    "VVP"
+  ], 
+  "suffer": [
+    "VV", 
+    "VVP"
+  ], 
+  "sui": [
+    "NP"
+  ], 
+  "suitable": [
+    "JJ"
+  ], 
+  "sull": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS"
+  ], 
+  "sulla": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "VVG"
+  ], 
+  "suo": [
+    "NN", 
+    "VVG", 
+    "VVZ", 
+    "RB", 
+    "NP", 
+    "JJ", 
+    "VVN"
+  ], 
+  "survey": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "suspend": [
+    "VV", 
+    "VVP"
+  ], 
+  "sÃ¬": [
+    "JJ", 
+    "NN", 
+    "NP"
+  ], 
+  "take": [
+    "VV", 
+    "VVP", 
+    "NN"
+  ], 
+  "tale": [
+    "NN"
+  ], 
+  "tanto": [
+    "RB"
+  ], 
+  "taste": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "tasty": [
+    "JJ"
+  ], 
+  "television": [
+    "NN"
+  ], 
+  "televisione": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG"
+  ], 
+  "tema": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "NNS"
+  ], 
+  "tempest": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "tempeste": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS"
+  ], 
+  "tenesse": [
+    "NN", 
+    "NNS", 
+    "JJ"
+  ], 
+  "test": [
+    "NN"
+  ], 
+  "than": [
+    "IN"
+  ], 
+  "that": [
+    "DT", 
+    "WDT", 
+    "IN"
+  ], 
+  "the": [
+    "DT"
+  ], 
+  "them": [
+    "PP"
+  ], 
+  "theme": [
+    "NN"
+  ], 
+  "think": [
+    "VVP", 
+    "NN"
+  ], 
+  "this": [
+    "DT", 
+    "RB", 
+    "NN"
+  ], 
+  "though": [
+    "IN", 
+    "RB"
+  ], 
+  "through": [
+    "IN", 
+    "RP"
+  ], 
+  "time": [
+    "NN", 
+    "VV"
+  ], 
+  "tiny": [
+    "JJ"
+  ], 
+  "to": [
+    "TO"
+  ], 
+  "toilet": [
+    "NN"
+  ], 
+  "too": [
+    "RB"
+  ], 
+  "topic": [
+    "NN"
+  ], 
+  "tornata": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "JJ"
+  ], 
+  "trascorso": [
+    "NN", 
+    "NNS", 
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVG", 
+    "VVN"
+  ], 
+  "tratta": [
+    "NN", 
+    "NP", 
+    "JJ", 
+    "NNS", 
+    "VVG"
+  ], 
+  "tribunal": [
+    "NN"
+  ], 
+  "tribunale": [
+    "NN", 
+    "JJ", 
+    "NNS"
+  ], 
+  "trust": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "tuttavia": [
+    "NNS", 
+    "NN"
+  ], 
+  "tutte": [
+    "NN"
+  ], 
+  "tutti": [
+    "JJ", 
+    "RB"
+  ], 
+  "ultima": [
+    "NN"
+  ], 
+  "un": [
+    "NNS", 
+    "NN", 
+    "RB", 
+    "VVZ", 
+    "VVG", 
+    "VVD", 
+    "JJ", 
+    "VVN", 
+    "VVP", 
+    "VV"
+  ], 
+  "una": [
+    "NN", 
+    "NP", 
+    "RB", 
+    "NNS", 
+    "JJ"
+  ], 
+  "understand": [
+    "VVP", 
+    "VV"
+  ], 
+  "union": [
+    "NN"
+  ], 
+  "unione": [
+    "NN", 
+    "NP", 
+    "NNS", 
+    "JJ", 
+    "VVG", 
+    "VVZ"
+  ], 
+  "up": [
+    "IN", 
+    "RB", 
+    "RP"
+  ], 
+  "upon": [
+    "IN", 
+    "RP", 
+    "RB"
+  ], 
+  "upswing": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "us": [
+    "PP"
+  ], 
+  "vacanze": [
+    "NN", 
+    "NP", 
+    "JJ"
+  ], 
+  "vacation": [
+    "NN"
+  ], 
+  "value": [
+    "NN", 
+    "VVP"
+  ], 
+  "various": [
+    "JJ"
+  ], 
+  "venerdÃ¬": [
+    "JJ", 
+    "NP", 
+    "NN"
+  ], 
+  "verificatesi": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "RB"
+  ], 
+  "verificati": [
+    "NN", 
+    "NP", 
+    "RB", 
+    "NNS", 
+    "JJ", 
+    "VVN", 
+    "VVG", 
+    "VVZ", 
+    "VVD"
+  ], 
+  "verify": [
+    "VV", 
+    "VVP"
+  ], 
+  "verrÃ ": [
+    "NP", 
+    "NNS", 
+    "NN", 
+    "JJ"
+  ], 
+  "very": [
+    "RB", 
+    "JJ"
+  ], 
+  "vice-president": [
+    "NN"
+  ], 
+  "vicepresidente": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "NP"
+  ], 
+  "victim": [
+    "NN"
+  ], 
+  "viewpoint": [
+    "NN"
+  ], 
+  "violation": [
+    "NN"
+  ], 
+  "violent": [
+    "JJ"
+  ], 
+  "violente": [
+    "NN", 
+    "JJ", 
+    "NNS", 
+    "NP", 
+    "RB", 
+    "VVG"
+  ], 
+  "vittime": [
+    "NN", 
+    "JJ"
+  ], 
+  "volentieri": [
+    "NNS", 
+    "NN", 
+    "NP", 
+    "JJ", 
+    "VVG"
+  ], 
+  "want": [
+    "VVP", 
+    "VV", 
+    "NN"
+  ], 
+  "watch": [
+    "VVP", 
+    "NN", 
+    "VV"
+  ], 
+  "way": [
+    "NN", 
+    "RB"
+  ], 
+  "we": [
+    "PP"
+  ], 
+  "wear": [
+    "NN", 
+    "VV", 
+    "VVP"
+  ], 
+  "well-built": [
+    "NP"
+  ], 
+  "well-dressed": [
+    "JJ"
+  ], 
+  "well-timed": [
+    "JJ"
+  ], 
+  "whether": [
+    "IN", 
+    "CC"
+  ], 
+  "which": [
+    "WDT"
+  ], 
+  "who": [
+    "WP"
+  ], 
+  "whose": [
+    "WP"
+  ], 
+  "why": [
+    "WRB", 
+    "RB", 
+    "NN"
+  ], 
+  "wife": [
+    "NN"
+  ], 
+  "willingly": [
+    "RB"
+  ], 
+  "wish": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "wishes": [
+    "NNS", 
+    "VVZ"
+  ], 
+  "withhold": [
+    "VV", 
+    "VVP"
+  ], 
+  "woman": [
+    "NN", 
+    "VVP", 
+    "VV"
+  ], 
+  "would": [
+    "MD"
+  ], 
+  "writing": [
+    "VVG", 
+    "NN"
+  ], 
+  "year": [
+    "NN"
+  ], 
+  "yes": [
+    "NN", 
+    "RB"
+  ], 
+  "yet": [
+    "RB", 
+    "CC"
+  ], 
+  "you": [
+    "PP"
+  ], 
+  "Ã¨": [
+    "NP"
+  ], 
+  "﻿certa": [
+    "NP", 
+    "RB", 
+    "JJ", 
+    "VVG", 
+    "NNS", 
+    "NN", 
+    "VVZ", 
+    "VVN", 
+    "VV"
+  ], 
+  "﻿dato": [
+    "NN", 
+    "JJ", 
+    "NP", 
+    "RB", 
+    "VVG", 
+    "NNS"
+  ], 
+  "﻿dei": [
+    "NNS", 
+    "NP", 
+    "NN", 
+    "RB", 
+    "VVG", 
+    "JJ", 
+    "VVN"
+  ]
+}
