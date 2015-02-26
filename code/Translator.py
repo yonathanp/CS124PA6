@@ -33,27 +33,20 @@ class PostProcessor:
             return
 
         # If pluralizing the Italian word alters it, then it was probably singular
-        if it.pluralize(tok['ita']) != tok['ita']:
+        if it.pluralize(tok['ita_base']) != tok['ita']:
             return
         
         # If singularizing the Italian word doesn't change it, it was singular
-        if it.singularize(tok['ita']) == tok['ita']:
+        if it.singularize(tok['ita_base']) == tok['ita']:
             return
 
         tok['en'] = en.pluralize(tok['en'])
 
-    def conjugate_infinitives(self, sentence, i):
-        tok = sentence[i]
-        original = tok['en']
+    def conjugate_infinitives(self, tok):
         if tok['pos'] != 'VER:infi':
             return
         if it.conjugate(tok['ita_base']) != tok['ita']:
             return
-
-        if i != 0:
-            prev = sentence[i - 1]
-            if prev['pos'] == 'PRE':
-                del sentence[i - 1]
 
         tok['en'] = "to " + tok['en']
         return
@@ -95,17 +88,17 @@ class PostProcessor:
         original = tok['en']
         if tok['pos'] != 'VER:cpre' and tok['pos'] != 'VER:pres':
             return
-        if it.conjugate(tok['ita'], it.PRESENT, 1, it.PL) == tok['ita']:
+        if it.conjugate(tok['ita_base'], it.PRESENT, 1, it.PL) == tok['ita']:
             tok['en'] = en.conjugate(tok['en'], en.PRESENT, 1, en.PL)
-        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.PL) == tok['ita']:
+        elif it.conjugate(tok['ita_base'], it.PRESENT, 2, it.PL) == tok['ita']:
             tok['en'] = en.conjugate(tok['en'], en.PRESENT, 2, en.PL)
-        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.PL) == tok['ita']:
+        elif it.conjugate(tok['ita_base'], it.PRESENT, 3, it.PL) == tok['ita']:
             tok['en'] = en.conjugate(tok['en'], en.PRESENT, 3, en.PL)
-        elif it.conjugate(tok['ita'], it.PRESENT, 1, it.SG) == tok['ita']:
+        elif it.conjugate(tok['ita_base'], it.PRESENT, 1, it.SG) == tok['ita']:
             tok['en'] = en.conjugate(tok['en'], en.PRESENT, 1, en.SG)
-        elif it.conjugate(tok['ita'], it.PRESENT, 2, it.SG) == tok['ita']:
+        elif it.conjugate(tok['ita_base'], it.PRESENT, 2, it.SG) == tok['ita']:
             tok['en'] = en.conjugate(tok['en'], en.PRESENT, 2, en.SG)
-        elif it.conjugate(tok['ita'], it.PRESENT, 3, it.SG) == tok['ita']:
+        elif it.conjugate(tok['ita_base'], it.PRESENT, 3, it.SG) == tok['ita']:
             tok['en'] = en.conjugate(tok['en'], en.PRESENT, 3, en.SG)
         else:
             return
@@ -133,8 +126,8 @@ class PostProcessor:
         else:
             return
 
-        print("CHANGE MADE")
-        print(tok)
+        #print("CHANGE MADE")
+        #print(tok)
         return
 
     def reorder_adjectives(self, sentence, i):
@@ -164,20 +157,59 @@ class PostProcessor:
         #print("SWITCHING:")
         #for i in range(i, move_to + 1):
         #    print(sentence[i])
-    def reorder_adverbs(self, sentence, i):
-        if i == len(sentence) - 1:
+
+    def remove_useless_articles(self, sentence, i):
+        if i == 0:
             return
         tok = sentence[i]
-        after = sentence[i + 1]
-        if tok['pos'].startswith("VER:") and after['pos'] == 'ADV':
-            sentence[i], sentence[i + 1] = sentence[i + 1], sentence[i]
-            print("SWITCHING:")
-            print(tok)
-            print(after)
+        prev = sentence[i-1]
+        
+        # This deletes "the my" and "the his"
+        if prev['pos'] == 'DET:def' and tok['pos'] == "PRO:poss":
+            del sentence[i - 1]
+            #print("DELETING USELESS ARTICLE")
+            #print(prev)
+            #print(tok)
+            return True
 
+    def remove_reflexive_junk(self, sentence, i):
+        tok = sentence[i]
+        if tok['pos'] == "PRO:refl":
+            del sentence[i]
+            #print("FIXING REFLEXIVE")
+            #print(tok)
+            return True
+
+    def remove_preposition_before_infinitive(self, sentence, i):
+        tok = sentence[i]
+        if tok['pos'] != 'VER:infi':
+            return
+        if it.conjugate(tok['ita_base']) != tok['ita']:
+            return
+
+        if i != 0:
+            prev = sentence[i - 1]
+            if prev['pos'] == 'PRE':
+                del sentence[i - 1]
+                return True
+
+
+    def correct_a_an(self, sentence, i):
+        if i == 0:
+            return
+        tok = sentence[i]
+        prev = sentence[i - 1]
+        if (tok['pos'] != 'NOM' and tok['pos'] != 'ADJ') or prev['pos'] != 'DET:indef':
+            return
+
+        prev['en'] = en.article(tok['en'])
+
+        #print("CHANGING A/AN")
+        #print(tok)
+        #print(prev)
 
     def process(self, sentence):
-        i = 0
+        # Single word operations
         for tok in sentence:
             if self.config['use_pluralization']:
                 self.pluralize_if_needed(tok)
@@ -186,12 +218,36 @@ class PostProcessor:
                 self.conjugate_english_verbs(tok)
                 self.conjugate_future_english_verbs(tok)
                 self.conjugate_gerunds(tok)
-                self.conjugate_infinitives(sentence, i)
-            #self.add_overt_pronoun(tok)
+                self.conjugate_infinitives(tok)
+            if self.config['use_overt_pronouns']:
+                self.add_overt_pronoun(tok)
+
+        # Reordering operations
+        i = 0
+        for tok in sentence:
             if self.config['use_adjective_reordering']:
                 self.reorder_adjectives(sentence, i)
-            self.reorder_adverbs(sentence, i)
             i += 1
+
+        # Deletion operations
+        i = 0
+        for tok in sentence:
+            if self.config['remove_useless_material']:
+                if self.remove_useless_articles(sentence, i):
+                    i -= 1
+                if self.remove_reflexive_junk(sentence, i):
+                    i -= 1
+                if self.remove_preposition_before_infinitive(sentence, i):
+                    i -= 1
+            i += 1
+
+        # Multi-word operations
+        i = 0
+        for tok in sentence:
+            if self.config['use_a_an_correction']:
+                self.correct_a_an(sentence, i)
+            i += 1
+
 
         return sentence
 

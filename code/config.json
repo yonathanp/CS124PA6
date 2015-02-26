@@ -1,7 +1,7 @@
 {
   "dictionary_file": "../dic/dictionary.json",
   "dev_sentence_file": "../corpus/ita_dev.txt",
-   "dev_sentence_pos_file": "../corpus/ita_dev_POS.txt",
+  "dev_sentence_pos_file": "../corpus/ita_dev_POS.txt",
   "dev_gold_file": "../corpus/eng_dev.txt",
   "english_full_proceedings_file": "../corpus/europarl-v7.it-en.en",
   "celex_file": "../corpus/celex.json",
@@ -11,5 +11,8 @@
   "use_unigram": true,
   "use_pluralization": true,
   "use_verb_conjugation": true,
-  "use_adjective_reordering": true
+  "use_adjective_reordering": true,
+  "remove_useless_material": true,
+  "use_overt_pronouns": true,
+  "use_a_an_correction": true
 }

@@ -14,7 +14,8 @@
   ], 
   "abbattute": [
     "demolish", 
-    "kill"
+    "hit",
+    "strike"
   ], 
   "abbia": [
     "own", 
@@ -38,8 +39,7 @@
     "obtain"
   ], 
   "abc": [
-    "abc", 
-    "alphabet"
+    "abc"
   ], 
   "accesso": [
     "access", 
@@ -365,10 +365,7 @@
   ], 
   "del": [
     "of the", 
-    "from the", 
-    "than the", 
-    "on the", 
-    "at the"
+    "from the"
   ], 
   "dell'": [
     "of", 
@@ -388,7 +385,6 @@
   "delle": [
     "of the", 
     "from the", 
-    "than the", 
     "on the", 
     "at the"
   ], 
@@ -711,7 +707,7 @@
   ], 
   "lo": [
     "the", 
-    "his"
+    "him"
   ], 
   "memoria": [
     "memory", 
@@ -1039,10 +1035,7 @@
     "hammer down"
   ], 
   "ricerche": [
-    "research", 
-    "survey", 
-    "search", 
-    "study"
+    "research"
   ], 
   "ricevuto": [
     "receive", 
@@ -1088,15 +1081,11 @@
   ], 
   "rinnovo": [
     "renewal", 
-    "renew", 
-    "restore"
+    "renew"
   ], 
   "ripresa": [
-    "retake", 
-    "upswing", 
-    "pickup", 
-    "take", 
-    "round"
+    "resume", 
+    "restart"
   ], 
   "risoluzioni": [
     "resolution"
@@ -1327,9 +1316,7 @@
   "tempeste": [
     "storm", 
     "tempest", 
-    "squall", 
-    "beat", 
-    "pound"
+    "squall"
   ], 
   "tenesse": [
     "hold", 
