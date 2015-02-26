@@ -115,6 +115,8 @@ class PostProcessor:
             prev = sentence[i - 1]
         if not tok['pos'].startswith('VER:'):
             return
+        if tok['pos'] == 'VER:infi' or tok['pos'] == 'VER:impe':
+            return
         if i != 0 and (prev['pos'] == 'NOM' or prev['pos'].startswith("PRO")):
             return
         
