@@ -34,7 +34,18 @@
 
 \section{Introduction}
 
-In this report we describe our implementation of a direct MT from Italian to English.
+In this report we describe our implementation of a direct MT from Italian to English. Italian and English differ in important respects in terms of their morphosyntactic structure:
+
+\begin{enumerate}
+	\item Given its rich inflectional morphology that allows Italian to mark grammatical person directly on the verb by means of suffixes, it is a pronoun-dropping language. For example, ``\textit{I read} a book" and ``\textit{You read} a book" will be translated as ``\textit{Leggo} un libro" and ``\textit{Leggi }un libro" respectively.\footnote{Overt person pronouns can be added in emphatic contexts (e.g. ``\textit{Io faccio} le pulizie e \textit{tu fai} la spesa" $\rightarrow$ ``\textit{I do} the cleaning up and \textit{you do} the shopping".), but in the majority of cases the pronoun is not realized overtly.} English, on the other hand, has relatively little inflectional morphology and requires the pronoun to be appear overtly.
+	
+	\item Italian adjectives typically follow the nouns the modify, whereas in English adjectives precede the noun (``un uomo (\textit{N}) coraggioso (\textit{ADJ})" $\rightarrow$ ``a courageous man").
+	
+	\item The construction verb + preposition + infinitive is common in Italian. We made sure that we had no to before prepositions preceding infinitives.
+	
+	
+	
+\end{enumerate}
 	 
 \section{Working corpus and results}
 
@@ -53,23 +64,58 @@ Examples
   
 \subsection{POS reordering}
 
-Using handwritten rules operating on POS tags, we placed adjectives before nouns and adverbs before verbs. We also placed indirect object proclitic pronouns after verbs.
+Using handwritten rules operating on POS tags, we placed adjectives before nouns and adverbs before verbs.
 
-\subsection{Inflectional morphology}
+[3] morti violente
+[4] questione pregiudiziale
+[7] seduta plenaria 
 
-For each POS category, we analyzed the final character of the word to select appropriate inflectional morphology in the English translation. For example, if an Italian noun ended in \textit{-o} or \textit{-a}, the English translation appeared as a singular noun; if the Italian noun ended in \textit{-i} or \textit{-e}, we assigned a plural inflectional ending to the corresponding English noun. If it ended in a specific character we determined it was a plural noun and added the inflection using the Nodebox Linguistics Library in Python. \\
+\subsection{Pluralization}
 
-Special rules for suppletive verbs. \\
+A major flaw of the baseline translation was that it contained lemmas and consequently did not make number of the nouns. Because a given inflectional ending can mark both singular and plural nouns (-e in occasione marks singular number but in condoglianze it marks plural number), we decided not to resort to handwritten rules that were based on specific inflectional endings. Instead we capitalized on the Itlian POS tags in conjunction with the provided by Pattern \\
 
-Special rules for inflectional morphology specific to verb classes.
+For all noun tokens with a known lemma, if pluralizing the Italian lemma generated the original word, we knew that it was plural so we pluralized the English word accordingly. \\
+
+\noindent This left us with the problem of exceptions that are the same in the singular and the plural. In dev Sentence [1] venerdi is the same in the singular and the plural, so it was mistakenly treated as plural and pluralized in English. To avoid this problem we added another condition using the Pattern.it singularize function: if singularizing the noun did not change it, we are we not pluralizing it. \\
+
+As the Italian package does not perform with 100\% accuracy (report the actual accuracy rate) and in sentence 2 it did not singularize colleghi to collehe which is a not a word in Italian.
+
+\subsection{Verb conjugation}
+
+%Turn this into a table!
+
+Conjugating infinitives: add to before verb based on POS.
+Conjugating future: add will before the verb based on POS.
+Conjugating gerunds: identify the verb aspect as progressive.
+Conjugating past: we were able to properly handle all past perfect verbs based on the POS tense.
+Conjugating present: we infer the number and person from the Italian conjugation using Pattern.
+
+
+\subsection{Overt English pronouns}
+
+To resolve the problem of covert pronouns in English, we first identified the grammatical person marker on the conjugated Italian verb, then added the English person pronoun with the same person marking. This generated undesirable verb phrases with two subjects (e.g. environment it is). We solved this by avoiding to generate overt personal pronouns if the verb was already preceded by a noun or a pronoun.
+
+As know and as have done | as we know and as we have done.
+
+
+\subsection{Deletion of superflous material}
+
+We created handwritten rules for deleting:
+
+\begin{enumerate}
+	\item Deleting definite articles before possessive pronouns e.g. the my. the his
+	\item Deleting reflexive pronouns before essere e.g. si sono abbattute -> was struck
+	\item removing prepositions before infitives: invitarla a fare
+\end{enumerate}
+
+\subsection{English indefinite article distinction}
+
+a Spanish newspaper
+an argument
 
 \subsection{POS filtering}
 
-Before we selected the English translation, we filtered the set of possible translations, selecting only those that the same POS tag as the Italian word.
- 
-\subsection{Deletion of articles}
-
-We created handwritten rules for deleting articles before nouns starting with a capital letter.
+Before we selected the English translation, we filtered the set of possible translations, selecting only those that the same POS tag as the Italian word. This narrowed down our search space and disambiguated English words that functioned as more than one lexical category. 
 
 \subsection{Europarl unigram model}
 
@@ -77,7 +123,9 @@ To select more contextually appropriate word frequencies, reflecting the kind of
  
 \subsection{Improved language model}
 
-To choose translation that were sensitive to the local phrasal context, we build a bigram language model on the basis of the sections of the Europarl corpus that were not used for our dev and test set. After word $e_1$ was chosen as a translation of French $f_1$, the next word chosen was the translation candidate $e_2$ for $f_2$ with the highest probability of following $e_1$. We also included a strong form of back-off: if the most probable candidate for $e_2$ was not more than twice as likely than the next most probable, the best translation was selected by Europarl unigram frequency instead.
+To choose translation that were sensitive to the local phrasal context, we build a bigram language model on the basis of the sections of the Europarl corpus that were not used for our dev and test set. After word $e_1$ was chosen as a translation of the Italian $f_i$, the following word chosen was the translation candidate $e_i+1$ for $f_i+1$ with the highest probability of following $e_i$. We implemented the backoff to the 
+
+%We also included a strong form of back-off: if the most probable candidate for $e_2$ was not more than twice as likely than the next most probable, the best translation was selected by Europarl unigram frequency instead.
 
 \section{Comparison with Google Translate}
 
