@@ -320,20 +320,20 @@
   "da": [
     "from", 
     "to", 
-    "at", 
     "since", 
     "give"
+	"by"
   ], 
   "dal": [
     "from the", 
     "to the", 
-    "at the", 
+    "by the", 
     "since the"
   ], 
   "dalla": [
     "from the", 
     "to the", 
-    "at the", 
+    "by the", 
     "since the"
   ], 
   "data": [

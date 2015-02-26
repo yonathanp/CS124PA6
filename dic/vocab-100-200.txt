@@ -1,4 +1,4 @@
-dei
+﻿dei
 	of the
     from the
     than the
@@ -234,7 +234,7 @@ noi
 dal
     from the
     to the
-    at the
+    by the
 	since the
 abbattute
 	demolish

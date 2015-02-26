@@ -1,4 +1,4 @@
-certa
+﻿certa
     certain
     convinced
     certainly
@@ -74,7 +74,7 @@ avete
 da
     from
     to
-    at
+    by
 	since
 	give
 accusa
@@ -265,7 +265,7 @@ riguardavano
 dalla
     from the
     to the
-    at the
+    by the
 	since the
 già
     by now
