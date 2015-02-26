@@ -179,6 +179,15 @@ class PostProcessor:
             #print(tok)
             return True
 
+        # More advanced "the his" deletion
+        if tok['pos'] == 'PRO:poss' and prev['en'].endswith(' the'):
+            #print(sentence[i - 1])
+            sentence[i - 1]['en'] = sentence[i - 1]['en'][0:-4]
+            #print(sentence[i - 1])
+            #print(sentence[i])
+
+
+
     def remove_reflexive_junk(self, sentence, i):
         tok = sentence[i]
         if tok['pos'] == "PRO:refl":
