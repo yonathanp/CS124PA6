@@ -344,11 +344,14 @@ class Dictionary:
             return
         maxFreq = 0.0
         bestTranslation = random.choice(self.italian_to_english[word])
+        randomTrans = True
         for w in self.italian_to_english[word]:
             if w in unigramFrequencies and unigramFrequencies[w] > maxFreq:
                 maxFreq = unigramFrequencies[w]
                 bestTranslation = w
+                randomTrans = False
         sentence[word_index]['en'] = bestTranslation
+        return randomTrans
         
     def getAllEnglishWords(self):
         res = set()
@@ -380,7 +383,12 @@ class Translator:
             for i in range(len(sentence)):
                 self.dictionary.pos_translation_filter(sentence, i)
                 
-        if self.config['use_celex']:
+        if self.config['use_unigram']:
+            for i in range(len(sentence)):
+                randomTrans = self.dictionary.translate_word_unigram(sentence, i, self.unigramFrequencies)
+                if randomTrans and self.config['use_celex']:
+                    self.dictionary.translate_word_celex(sentence, i)
+        elif self.config['use_celex']:
             for i in range(len(sentence)):
                 self.dictionary.translate_word_celex(sentence, i)
         else:
