@@ -359,7 +359,7 @@ class Dictionary:
         sentence[word_index]['en'] = bestTranslation
         return randomTrans
         
-    def translate_word_bigram(self, sentence, word_index, bigramFrequencies, unigramFrequencies):
+    def translate_word_bigram(self, sentence, word_index, bigramFrequencies, prevTranslation):
         word = sentence[word_index]['ita']
         word_type = sentence[word_index]['pos']
         if not self.translate_word_sanity_check(word, word_type):
@@ -371,14 +371,12 @@ class Dictionary:
         if word_index > 0:
             prev_word = sentence[word_index-1]['ita']
             prev_word_type = sentence[word_index-1]['pos']
-            if self.translate_word_sanity_check(prev_word, prev_word_type):
-                for x in self.italian_to_english[prev_word]:
-                    for y in self.italian_to_english[word]:
-                        key = ' '.join([x,y])
-                        if key in bigramFrequencies and bigramFrequencies[key] > maxFreq:
-                            maxFreq = (1.00 * bigramFrequencies[key]) / unigramFrequencies[x]
-                            bestTranslation = y
-                            randomTrans = False
+            for w in self.italian_to_english[word]:
+                key = ' '.join([prevTranslation,w])
+                if key in bigramFrequencies and bigramFrequencies[key] > maxFreq:
+                    maxFreq = bigramFrequencies[key]
+                    bestTranslation = w
+                    randomTrans = False
         sentence[word_index]['en'] = bestTranslation
         return randomTrans
         
@@ -416,12 +414,14 @@ class Translator:
                 
         
         if self.config['use_bigram']:
+            prevTranslation = ''
             for i in range(len(sentence)):
-                randomTrans = self.dictionary.translate_word_bigram(sentence, i, self.bigramFrequencies, self.unigramFrequencies)
+                randomTrans = self.dictionary.translate_word_bigram(sentence, i, self.bigramFrequencies, prevTranslation)
                 if randomTrans and self.config['use_unigram']:
                     randomTrans = self.dictionary.translate_word_unigram(sentence, i, self.unigramFrequencies)
                     if randomTrans and self.config['use_celex']:
                         self.dictionary.translate_word_celex(sentence, i)
+                prevTranslation = sentence[i]['en']
         elif self.config['use_unigram']:
             for i in range(len(sentence)):
                 randomTrans = self.dictionary.translate_word_unigram(sentence, i, self.unigramFrequencies)
